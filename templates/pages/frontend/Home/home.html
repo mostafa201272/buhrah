@@ -1,0 +1,26 @@
+<!-- Extends The Base Template -->
+{% extends 'pages/frontend/frontend_base.html' %}
+
+<!-- Load Static Files -->
+{% load static %}
+
+<!-- Page Title -->
+{% block title %}Buhrah{% endblock title %}
+
+<!-- Styling files -->
+{% block currentPageStylesFiles %}
+
+{% endblock currentPageStylesFiles %}
+
+
+
+<!-- Page Body Content -->
+{% block currentBodyContent %}
+{% csrf_token %}
+<h1>From HTML</h1>
+{% endblock currentBodyContent %}
+
+<!-- Scripting files -->
+{% block currentPageScriptsFiles %}
+
+{% endblock currentPageScriptsFiles %}

@@ -1,0 +1,56 @@
+<!-- Load Static Files -->
+{% load static %}
+
+<!-- Start HTML Code -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Main Meta Tags -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Important Meta Tags -->
+        <meta name="author" content="Elcaptaingrp.com" />
+        <meta name="description" content="Welcome To Buhrah"/>
+        <meta name="keywords" content="Elcaptain, Travel, Education" />
+
+        <!-- Library Styles -->
+        <link rel="stylesheet" href="{% static 'base/css/libs/bootstrap.min.css' %}" />
+
+        <!-- Main Style -->
+        <link rel="stylesheet" href="{% static 'main/css/main.css' %}" />
+
+        <!-- Current Page Styles Files -->
+        {% block currentPageStylesFiles %} {% endblock currentPageStylesFiles %}
+
+        <!-- Page Title & Icon -->
+        <title>{% block title %} {% endblock title %}</title>
+        <link rel="shortcut icon" href="{% static 'base/images/logo.png' %}" />
+    </head>
+    <body>
+
+        {% comment %} Token {% endcomment %}
+        {% csrf_token %}
+        
+        <!-- Current Page Body Content-->
+        {% block currentBodyContent %} {% endblock currentBodyContent %}
+
+        <!-- Footer -->
+        {% comment %} {% include 'pages/header_and_footer/footer.html' %} {% endcomment %}
+
+        <!-- External Libraries Scripts -->
+        <script src="{% static 'base/libs/jquery-3.2.1.min.js' %}"></script>
+        <script src="{% static 'base/libs/bootstrap.min.js' %}"></script>
+        <script src="{% static 'base/libs/popper.js' %}"></script>
+
+        
+        <!-- Main Scripts -->
+        <script src="{% static 'main/js/main.js' %}"></script>
+        <script src="{% static 'main/js/language_config.js' %}"></script>
+
+        <!-- Current Page Scripts Files -->
+        {% block currentPageScriptsFiles %} {% endblock currentPageScriptsFiles %}
+
+    </body>
+</html>
