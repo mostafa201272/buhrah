@@ -1,0 +1,55 @@
+{% extends 'pages/frontend/Sign/login_and_registeration_base.html' %}
+{% load static %}
+
+<!-- Page Title -->
+{% block title %}Login | Buhrah{% endblock title %}
+
+<!-- Body Content-->
+{% block body %}
+
+        <!-- Start of Formly [ 1 ] Basic  -->
+        <section class="Formly Formly-Flat">
+            <div class="Formly-Flat-Form-Container">
+
+                <div class="Formly-Flat-Forms Formly-Flat-Register-Form">
+                    <!-- Start Of Form -->
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div>
+                            {{form}}
+                        </div>
+                        
+                        <div class="col-12" style="padding: 0;">
+                            <div class="form-button">
+                                <button type="submit" class="ibtn">Login</button>
+                            </div>
+                            <!-- <div class="Formly-Forget-Password">
+                                <span>Forget Password ?</span>
+                            </div> -->
+                        </div>
+                        
+                    </form>
+                    <!-- End Of Form -->
+                    
+                </div>
+            </div>
+        </section>
+        <!-- End Of Formly [ 1 ] Basic  -->
+
+{% endblock body %}
+
+
+<!-- Current Page Scripts Files -->
+{% block ScriptsFiles %}
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+            // Add Username placeholder
+            document.querySelector("#id_username").setAttribute("placeholder","Username")
+
+            // Add Password placeholder
+            document.querySelector("#id_password").setAttribute("placeholder","Password")
+
+        });
+    </script>
+{% endblock ScriptsFiles %}

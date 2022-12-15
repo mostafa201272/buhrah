@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     
     # Apps
     'Home',
+    'Users',
 ]
 
 MIDDLEWARE = [
@@ -136,3 +137,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Login View Configurations
+# LOGIN_REDIRECT_URL = 'adminPanal'
+LOGIN_URL = 'Login'

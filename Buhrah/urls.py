@@ -25,6 +25,9 @@ urlpatterns = [
 
     # Admin Control
     path('admin/', admin.site.urls),
+
+    # Users App
+    path('users/', include('Users.urls')),
 ]
 
 if settings.DEBUG:
