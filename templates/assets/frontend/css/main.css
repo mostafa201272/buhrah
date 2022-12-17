@@ -1,0 +1,52 @@
+.loader3 .spin img{
+    margin: 10%;
+    max-width: 100%;
+    height: 80%;
+}
+.loader3 .spin span{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #ac8938 #efefef #efefef;  
+}
+.topbar {
+    background: #ac8938;
+    color: #fff;
+}
+
+.topbar .top-right-menu .top-menu li a{
+    color: #f0f0f0;
+}
+header .brand .logo{
+    max-width: 110px;
+}
+
+header .brand .logo img{
+    width: 100%;
+}
+
+.horizontal-header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+header.horizontal-header .main-menu .menu .menu-item.menu-btn .btn{
+    background-color: #ac8938;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+header.horizontal-header .main-menu .menu .menu-item.menu-btn .btn-outline{
+    background-color: #fff;
+    border: 2px solid #ac8938;
+    color: #ac8938;
+    
+}
+
+footer .footer-widgets .footer-widget .footer-logo{
+    width: 80%;
+}
+.brand-info .inner .content img{
+    max-height: 200px;
+}
+

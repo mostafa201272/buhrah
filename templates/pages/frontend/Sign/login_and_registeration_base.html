@@ -80,6 +80,10 @@
         .buhrah-logo{
             width: 60%;
         }
+
+        .form-content h3{
+          font-size: 18px
+        }
       }
 
       @media (max-width: 482px){
@@ -129,10 +133,32 @@
 
         .form-holder {
             margin-left: 0;
-        }  
+        } 
+        
+        .logout-links span{
+          display: block;
+          margin-bottom: 5px
+        }
       }
       
+      .errorlist{
+        list-style: none;
+        padding: 0;
+      }
+      .errorlist li{
+        color: #a10d02;
+        border: 1px solid #a10d02;
+        padding: 5px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 5px;
+      }
       
+      @media (max-width: 992px){
+          .form-holder .form-content {
+              padding: 125px 0px 60px;
+          }
+      }
 
     </style>
 
@@ -141,7 +167,7 @@
 
     <!-- Page Title & Icon -->
     <title>{% block title %} {% endblock title %}</title>
-    <link rel="shortcut icon" href="{% static 'base/images/logo.png' %}" />
+    <link rel="shortcut icon" href="{% static 'base/images/icon.svg' %}" />
 
 
   </head>
@@ -165,24 +191,20 @@
                       <div class="buhrah-logo">
                           <a href="index.html">
                               <div class="logo">
+                                <a href="{% url 'HomePage' %}"> 
                                   <img class="" src="{% static 'base/images/logo.svg' %}" style="opacity: 1 !important;" alt="">
+                                </a> 
                               </div>
                           </a>
                       </div>
                       
-                      <div class="form-items">
-                          <div class="page-links">
-                              <a href="{% url 'Login' %}" class="active">Login</a>
-                              <a href="{% url 'Registeration' %}">Register</a>
-                          </div>
-                          
-                          {% comment %} START OF FORM {% endcomment %}
-                          {% block body %}
+                      {% comment %} START OF FORM {% endcomment %}
+                      {% block body %}
 
 
-                          {% endblock body %}
-                          {% comment %} END OF FORM {% endcomment %}
-                      </div>
+                      {% endblock body %}
+                      {% comment %} END OF FORM {% endcomment %}
+
                   </div>
               </div>
           </div>

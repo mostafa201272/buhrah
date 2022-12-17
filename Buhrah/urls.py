@@ -23,6 +23,22 @@ urlpatterns = [
     # Home Page
     path('', include('Home.urls')),
 
+    # Buy Page
+    path('buy/', include('Buy.urls')),
+
+    # Sell Page
+    path('sell/', include('Sell.urls')),
+
+    # Blog Page
+    path('blog/', include('Blog.urls')),
+
+    # Financial Page
+    path('financials/', include('Financial_Solutions.urls')),
+
+    # Financial Page
+    path('contact/', include('Contact.urls')),
+
+
     # Admin Control
     path('admin/', admin.site.urls),
 

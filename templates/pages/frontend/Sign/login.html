@@ -7,6 +7,11 @@
 <!-- Body Content-->
 {% block body %}
 
+    <div class="form-items">
+        <div class="page-links">
+            <a href="{% url 'Login' %}" class="active">Login</a>
+            <a href="{% url 'Registeration' %}">Register</a>
+        </div>
         <!-- Start of Formly [ 1 ] Basic  -->
         <section class="Formly Formly-Flat">
             <div class="Formly-Flat-Form-Container">
@@ -35,7 +40,7 @@
             </div>
         </section>
         <!-- End Of Formly [ 1 ] Basic  -->
-
+    </div>
 {% endblock body %}
 
 

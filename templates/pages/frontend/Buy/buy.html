@@ -1,0 +1,27 @@
+<!-- Extends The Base Template -->
+{% extends 'pages/frontend/frontend_base.html' %}
+
+<!-- Load Static Files -->
+{% load static %}
+
+<!-- Page Title -->
+{% block title %}Buhrah | BUY{% endblock title %}
+
+<!-- Styling files -->
+{% block currentPageStylesFiles %}
+
+{% endblock currentPageStylesFiles %}
+
+
+
+<!-- Page Body Content -->
+{% block currentBodyContent %}
+{% csrf_token %}
+
+    
+{% endblock currentBodyContent %}
+
+<!-- Scripting files -->
+{% block currentPageScriptsFiles %}
+
+{% endblock currentPageScriptsFiles %}

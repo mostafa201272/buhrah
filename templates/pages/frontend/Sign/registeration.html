@@ -7,6 +7,12 @@
 <!-- Body Content-->
 {% block body %}
 
+    <div class="form-items">
+        <div class="page-links">
+            <a href="{% url 'Login' %}">Login</a>
+            <a href="{% url 'Registeration' %}" class="active">Register</a>
+        </div>
+
         <!-- Start of Formly [ 1 ] Basic  -->
         <section class="Formly Formly-Flat">
             <div class="Formly-Flat-Form-Container">
@@ -19,7 +25,7 @@
                             <h3>Create an account</h3>
                         </div>
                         <div class="Formly-Flat-Form-sub-title">
-                            <span>Setup a new account in a minute</span>
+                            <span>Setup a new account in 5 seconds</span>
                         </div>
                     </div>
                     <!-- End Of Form Header -->
@@ -42,5 +48,6 @@
             </div>
         </section>
         <!-- End Of Formly [ 1 ] Basic  -->
+    </div>
 
 {% endblock body %}

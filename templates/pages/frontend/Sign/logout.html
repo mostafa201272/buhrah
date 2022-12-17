@@ -10,37 +10,17 @@
         <!-- Start of Formly [ 1 ] Basic  -->
         <section class="Formly Formly-Flat">
             <div class="Formly-Flat-Form-Container">
-                <!-- Start Of Formly Head [ Logo ] -->
-                <div class="Formly-Header">
-                    <div class="Formly-Header-logo">
-                        <!-- Create Logo Using Img [ png , jpg , svg] Remove Comment To Use This Option-->
-                        
-                        <div class="img-log">
-                             <img src="{% static 'base/images/logo.png' %}" alt="logo" title="Formy">
-                        </div>
-                        
-                    </div>
-                    <!-- Logo Name-->
-
-                </div>
+                
                 <!-- End Of Formly Head [ Logo ] -->
                 <div class="Formly-Flat-Forms Formly-Flat-Register-Form">
-                    <!-- Start Of Form Header -->
-                    <div class="Formly-Flat-Form-Header">
-
-                        <div class="Formly-Flat-Form-sub-title">
-                            <span>Use your credenitials to access your account</span>
-                        </div>
-                    </div>
-                    <!-- End Of Form Header -->
                     <!-- Start Of Form Footer -->
                     <div class="row">
 
                         <!-- Redirection Links -->
-                        <div class="col-12 Formly-Flat-swap-Link">
-                            <span class="redirect-links"><a class="Register" href="{% url 'HomePage' %}">Home</a></span>
-                            <span class="redirect-links"><a class="Register" href="{% url 'Login' %}">Login</a></span>
-                            <span class="redirect-links"><a class="Register" href="{% url 'Registeration' %}">Create Account</a></span>
+                        <div class="col-12 logout-links">
+                            <span class="redirect-links"><a class="btn btn-dark" href="{% url 'HomePage' %}">Home</a></span>
+                            <span class="redirect-links"><a class="btn btn-outline-dark" href="{% url 'Login' %}">Login</a></span>
+                            <span class="redirect-links"><a class="btn btn-outline-dark" href="{% url 'Registeration' %}">Create Account</a></span>
                         </div>
 
                     </div>
