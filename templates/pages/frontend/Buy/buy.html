@@ -18,7 +18,150 @@
 {% block currentBodyContent %}
 {% csrf_token %}
 
-    
+
+<section class="house-buy-filter container">
+
+
+    <div class="house-buy-filter-map-section">
+        <img src="{% static 'frontend/images/about-card.jpg ' %}" />
+    </div>
+
+    <div class="house-buy-filter-data-section">
+
+        <!-- ========== SEARCHING FORM ========== -->
+        <div class="search-house-form">
+
+            <form id="booking-form">
+                <!-- NAME -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                        <label>Location
+                            <a href="#" title="Target Location" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please type the target location">
+                                <i class="fa fa-info-circle"></i>
+                            </a>
+                        </label>
+                        <input class="form-control" name="search-location" type="text" data-trigger="hover" placeholder="Write target location">
+                        </div>
+                    </div>
+                    
+                    <!-- Property TYPE -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>
+                                Property type
+                            </label>
+                            <select class="form-control" name="booking-property-type" title="Select Property type" >
+                                <option value="Single">Single Room</option>
+                                <option value="Double">Double Room</option>
+                                <option value="Deluxe">Deluxe Room</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- ROOMS And Bathromms -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>ROOMS & Bathrooms
+                                <a href="#" title="ROOMS & Bathrooms" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please Select ROOMS & Bathrooms">
+                                    <i class="fa fa-info-circle"></i>
+                                </a>
+                            </label>
+                            <div class="panel-dropdown">
+                                <div class="form-control guestspicker">
+                                    Rooms & Bathrooms
+                                    <span class="gueststotal"></span>
+                                </div>
+                                <div class="panel-dropdown-content">
+                                    <div class="guests-buttons">
+                                        <label>Rooms
+                                            <a href="#" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="18+ years" data-original-title="Adults">
+                                                <i class="fa fa-info-circle"></i>
+                                            </a>
+                                        </label>
+                                        <div class="guests-button">
+                                            <div class="minus"></div>
+                                            <input type="text" name="booking-adults" class="booking-guests" value="0">
+                                            <div class="plus"></div>
+                                        </div>
+                                    </div>
+                                    <div class="guests-buttons">
+                                        <label>Bathromms
+                                            <a href="#" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Under 18 years" data-original-title="Children">
+                                                <i class="fa fa-info-circle"></i>
+                                            </a>
+                                        </label>
+                                        <div class="guests-button">
+                                            <div class="minus"></div>
+                                            <input type="text" name="booking-children" class="booking-guests" value="0">
+                                            <div class="plus"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BOOKING BUTTON -->
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-book">Find</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <!-- START OF HOUSE DETAILS-->
+        <main class="rooms-list-view">
+            <div class="container">
+                
+                <!-- ITEM -->
+                <div class="room-list-item">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <figure class="gradient-overlay-hover link-icon">
+                                <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                            </figure>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="room-info">
+                                <h3 class="room-title">
+                                    <a href="{% url 'buy_house_details_page' %}">Vila</a>
+                                </h3>
+                                
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
+                                <div class="room-services">
+                                    <span>Area: 150m<sup>2</sup></span>
+                                    <span>Beds: 5</span>
+                                    <span>Bathrooms: 2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="room-price">
+                                <span class="price">SR 890K</span>
+                                <a href="{% url 'buy_house_details_page' %}" class="btn btn-sm house-search-action-btn">VIEW DETAILS</a>
+                                <a href="{% url 'buy_house_details_page' %}" class="btn btn-sm house-search-action-btn">Request a tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            
+
+
+            </div>
+        </main>
+        <!-- END OF HOUSE DETAILS-->
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
 {% endblock currentBodyContent %}
 
 <!-- Scripting files -->

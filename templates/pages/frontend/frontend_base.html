@@ -275,17 +275,10 @@
             <i class="fa fa-angle-up" aria-hidden="true"></i>
         </div>
 
-        <!-- Footer -->
-        {% comment %} {% include 'pages/header_and_footer/footer.html' %} {% endcomment %}
-
-        <!-- External Libraries Scripts -->
-        <script src="{% static 'base/js/jquery-3.2.1.min.js' %}"></script>
-        <script src="{% static 'base/js/bootstrap.min.js' %}"></script>
-        <script src="{% static 'base/js/popper.js' %}"></script>
-
         <!-- Required Scripts -->
         <script src="{% static 'frontend/js/jquery.min.js' %}"></script>
         <script src="{% static 'frontend/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'base/js/popper.js' %}"></script>
         <script src="{% static 'frontend/js/bootstrap-select.min.js' %}"></script>
         <script src="{% static 'frontend/js/jquery.mmenu.js' %}"></script>
         <script src="{% static 'frontend/js/jquery.inview.min.js' %}"></script>
@@ -304,7 +297,7 @@
         <script src="{% static 'frontend/js/smoothscroll.min.js' %}"></script>
         <script src="{% static 'frontend/js/instafeed.min.js' %}"></script>
         <script src="{% static 'frontend/js/main.js' %}"></script>
-
+        
         <!-- Current Page Scripts Files -->
         {% block currentPageScriptsFiles %} {% endblock currentPageScriptsFiles %}
 

@@ -50,3 +50,77 @@ footer .footer-widgets .footer-widget .footer-logo{
     max-height: 200px;
 }
 
+/* BUY PAGE */
+.house-buy-filter{
+    display: flex;
+    padding: 20px 0;
+    max-height: 80vh;
+}
+.house-buy-filter > div{
+    width: 50%;
+}
+.house-buy-filter .house-buy-filter-map-section{
+    overflow: hidden;
+}
+.house-buy-filter .house-buy-filter-map-section img{
+    width: 100%;
+}
+.house-buy-filter .house-buy-filter-data-section{
+    overflow-y: scroll;
+    position: relative;
+}
+.search-house-form{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    z-index: 1019;
+    background-color: #fff;
+    -webkit-box-shadow: 0 15px 75px 0 rgb(0 0 0 / 7%);
+    box-shadow: 0 15px 75px 0 rgb(0 0 0 / 7%);
+}
+
+
+
+.room-list-item .room-info{
+    padding: 15px;
+}
+.room-list-item figure a:before{
+    right: 10px;
+    border-right: 5px double rgba(255, 255, 255, 0.5);
+}
+
+/* @media(min-width: 1201px){
+    .house-buy-filter .house-buy-filter-data-section{
+        width: 100%;
+    }
+} */
+
+@media(max-width: 1200px){
+    .search-house-form{
+        position: unset;
+    }
+
+    .house-buy-filter .house-buy-filter-map-section{
+        display: none;
+    }
+    .house-buy-filter .house-buy-filter-data-section{
+        width: 100%;
+    }
+}
+
+/* END BUY PAGE*/
+
+/* START OF General Styles*/
+::-webkit-scrollbar{
+    width: 0;
+}
+.house-search-action-btn{
+    margin-bottom: 5px;
+}
+.room-list-item .room-price .price{
+    font-size: 36px;
+}
+/* END OF General Styles*/
+
