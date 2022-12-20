@@ -19,11 +19,16 @@
 {% csrf_token %}
 
 
-<section class="house-buy-filter container">
+<section class="house-buy-filter container-fluid">
 
 
     <div class="house-buy-filter-map-section">
-        <img src="{% static 'frontend/images/about-card.jpg ' %}" />
+        
+        <div class="displayed-map">
+
+            {{map|safe}}
+
+        </div>
     </div>
 
     <div class="house-buy-filter-data-section">
@@ -34,7 +39,7 @@
             <form id="booking-form">
                 <!-- NAME -->
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-4">
                         <div class="form-group">
                         <label>Location
                             <a href="#" title="Target Location" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please type the target location">
@@ -46,7 +51,7 @@
                     </div>
                     
                     <!-- Property TYPE -->
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <label>
                                 Property type
@@ -59,7 +64,7 @@
                         </div>
                     </div>
                     <!-- ROOMS And Bathromms -->
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <label>ROOMS & Bathrooms
                                 <a href="#" title="ROOMS & Bathrooms" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please Select ROOMS & Bathrooms">
@@ -101,8 +106,8 @@
                         </div>
                     </div>
                     <!-- BOOKING BUTTON -->
-                    <div class="col-md-12">
-                        <button type="submit" class="btn btn-book">Find</button>
+                    <div class="col-md-2 btn-find-hous-buy-page">
+                        <button type="submit" class="btn">Find</button>
                     </div>
                 </div>
             </form>
@@ -110,7 +115,7 @@
 
 
         <!-- START OF HOUSE DETAILS-->
-        <main class="rooms-list-view">
+        <main class="rooms-list-view" style="padding: 30px 0;">
             <div class="container">
                 
                 <!-- ITEM -->
