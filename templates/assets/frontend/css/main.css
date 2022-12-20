@@ -53,11 +53,18 @@ footer .footer-widgets .footer-widget .footer-logo{
 /* BUY PAGE */
 .house-buy-filter{
     display: flex;
-    padding: 20px 0;
-    max-height: 80vh;
+    padding: 0;
+    height: 100vh;
+    flex-direction: column;
 }
-.house-buy-filter > div{
+
+.house-buy-filter .filter-body{
+    display: flex;
+    height: 100%;
+}
+.house-buy-filter .filter-body > div{
     width: 50%;
+    height: calc(100vh - 90px);
 }
 .house-buy-filter .house-buy-filter-map-section{
     overflow: hidden;
@@ -78,44 +85,47 @@ footer .footer-widgets .footer-widget .footer-logo{
 .house-buy-filter .house-buy-filter-data-section{
     overflow-y: scroll;
     position: relative;
-}
-.search-house-form{
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px;
-    z-index: 1019;
-    background-color: #fff;
-    -webkit-box-shadow: 0 15px 75px 0 rgb(0 0 0 / 7%);
-    box-shadow: 0 15px 75px 0 rgb(0 0 0 / 7%);
+    box-shadow: -1px 7px 6px 0px #8f8f8f80;
+
 }
 
+.search-form-top{
+    border-bottom: 1px solid #ccc;
+}
+
+.search-form-top .search-house-form{
+    width: 100%;
+    padding: 5px 15px;
+    background-color: #fff;
+}
+
+.search-form-top .search-house-form .form-group{
+    margin-bottom: 5px;
+}
 
 .btn-find-hous-buy-page{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-bottom: 5px;
 }
 
-.room-list-item .room-info{
-    padding: 15px;
+.houses-list-main{
+    padding: 30px 0; 
+    height: 100%;
 }
-.room-list-item figure a:before{
-    right: 10px;
-    border-right: 5px double rgba(255, 255, 255, 0.5);
-}
-
 
 /* =====  MAP ROOMS LIST ===== */
 
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item {
-    border-radius: 2px;
-    margin-bottom: 40px;
-    border: 1px solid #efefef;
-    position: relative;
-  }
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .favorite-item {
+.leaflet-popup-content-wrapper{
+    background: white;
+    box-shadow: 0 3px 14px rgb(0 0 0 / 40%) !important;
+    border-radius: 2px !important;
+    position: relative !important;
+}
+
+.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .favorite-item ,
+.room-list-item .favorite-item {
     color: #ffffff;
     position: relative;
     width: 50px;
@@ -127,8 +137,9 @@ footer .footer-widgets .footer-widget .footer-logo{
     padding-right: 7px;
     padding-top: 7px;
     line-height: 1;
-  }
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .favorite-item:before {
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .favorite-item:before ,
+.room-list-item .favorite-item:before {
     content: " ";
     width: 50px;
     height: 50px;
@@ -139,12 +150,14 @@ footer .footer-widgets .footer-widget .footer-logo{
     top: 0;
     left: auto;
     right: 0;
-  }
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .favorite-item i {
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .favorite-item i ,
+.room-list-item .favorite-item i {
     position: relative;
     z-index: 2;
-  }
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item figure a:before {
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item figure a:before ,
+.room-list-item figure a:before {
     display: block;
     content: '';
     position: absolute;
@@ -153,38 +166,45 @@ footer .footer-widgets .footer-widget .footer-logo{
     bottom: 10px;
     left: 10px;
     border: 5px double rgba(255, 255, 255, 0.5);
-    z-index: 999;
+    z-index: 1;
     border-right: none;
     -webkit-transition: 1s;
     transition: 1s;
-  }
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info {
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info ,
+.room-list-item .room-info {
     padding: 15px 0;
-  }
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info .room-title {
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info .room-title ,
+.room-list-item .room-info .room-title {
     margin-top: 0;
-  }
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info .room-title a {
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info .room-title a ,
+.room-list-item .room-info .room-title a {
     color: #d7d8d9;
     font-size: 24px;
     font-weight: 500;
     position: relative;
     z-index: 9;
     text-transform: uppercase;
-  }
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info .room-rates {
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info .room-rates ,
+.room-list-item .room-info .room-rates {
     margin-bottom: 5px;
     text-transform: uppercase;
-  }
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info .room-rates i {
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info .room-rates i ,
+.room-list-item .room-info .room-rates i {
     font-size: 13px;
     color: #ffb600;
-  }
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info .room-rates a {
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info .room-rates a ,
+.room-list-item .room-info .room-rates a {
     margin-left: 5px;
     font-size: 12px;
-  }
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-price {
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-price ,
+.room-list-item .room-price {
     text-align: center;
     padding: 10px;
     height: 100%;
@@ -199,17 +219,20 @@ footer .footer-widgets .footer-widget .footer-logo{
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-price .price {
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-price .price ,
+.room-list-item .room-price .price {
     margin-bottom: 30px;
     font-size: 20px;
     color: #edcb9a;
     text-transform: uppercase;
-  }
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-services {
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-services ,
+.room-list-item .room-services {
     margin-top: 38px;
-  }
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-services i {
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-services i ,
+.room-list-item .room-services i {
     width: 30px;
     height: 30px;
     border: 1px solid #e3e3e3;
@@ -222,8 +245,9 @@ footer .footer-widgets .footer-widget .footer-logo{
     font-size: 11px;
     -webkit-transition: .5s;
     transition: .5s;
-  }
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-services span {
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-services span ,
+.room-list-item .room-services span {
     height: 30px;
     display: inline-block;
     padding: 0 8px;
@@ -237,11 +261,27 @@ footer .footer-widgets .footer-widget .footer-logo{
     font-size: 12px;
     -webkit-transition: .5s;
     transition: .5s;
-  }
-  .leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-services i:hover, .room-list-item .room-services span:hover {
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-services i:hover, .room-list-item .room-services span:hover ,
+.room-list-item .room-services i:hover, .room-list-item .room-services span:hover {
     cursor: pointer;
     background: #e3e3e3;
-  }
+}
+
+.room-list-item .room-info{
+    padding: 15px;
+}
+.room-list-item figure a:before{
+    right: 10px;
+    border-right: 5px double rgba(255, 255, 255, 0.5);
+}
+
+/* START OF MAP TOOL TIP*/
+
+
+
+/* END OF MAP TOOL TIP*/
+
 
   /* ===== END OF MAP ROOMS LIST ===== */
 
@@ -250,12 +290,32 @@ footer .footer-widgets .footer-widget .footer-logo{
         position: unset;
     }
 
+    .house-buy-filter{
+        height: auto;
+    }
+
+    .houses-list-main{
+        padding: 30px 0; 
+        height: auto;
+    }
+
     .house-buy-filter .house-buy-filter-map-section{
         display: none;
     }
     .house-buy-filter .house-buy-filter-data-section{
         width: 100%;
     }
+    .house-buy-filter .filter-body > div{
+        width: 100%;
+        height: auto;
+    }
+    .panel-dropdown .panel-dropdown-content{
+        right: 15px;
+    }
+    .panel-dropdown .panel-dropdown-content:before{
+        right: 20px;
+    }
+
 }
 
 /* END BUY PAGE*/

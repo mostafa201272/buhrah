@@ -21,17 +21,7 @@
 
 <section class="house-buy-filter container-fluid">
 
-
-    <div class="house-buy-filter-map-section">
-        
-        <div class="displayed-map">
-
-            {{map|safe}}
-
-        </div>
-    </div>
-
-    <div class="house-buy-filter-data-section">
+    <div class="search-form-top">
 
         <!-- ========== SEARCHING FORM ========== -->
         <div class="search-house-form">
@@ -51,7 +41,7 @@
                     </div>
                     
                     <!-- Property TYPE -->
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                         <div class="form-group">
                             <label>
                                 Property type
@@ -64,7 +54,7 @@
                         </div>
                     </div>
                     <!-- ROOMS And Bathromms -->
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                         <div class="form-group">
                             <label>ROOMS & Bathrooms
                                 <a href="#" title="ROOMS & Bathrooms" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please Select ROOMS & Bathrooms">
@@ -113,49 +103,629 @@
             </form>
         </div>
 
+    </div>
 
-        <!-- START OF HOUSE DETAILS-->
-        <main class="rooms-list-view" style="padding: 30px 0;">
-            <div class="container">
-                
-                <!-- ITEM -->
-                <div class="room-list-item">
+    <div class="filter-body">
+
+        <div class="house-buy-filter-map-section">
+        
+            <div class="displayed-map">
+    
+                {{map|safe}}
+    
+            </div>
+        </div>
+    
+        <div class="house-buy-filter-data-section">
+    
+            <!-- START OF HOUSE DETAILS-->
+            <main class="rooms-list-view houses-list-main">
+                <div class="container">
+                    
                     <div class="row">
-                        <div class="col-lg-12">
-                            <figure class="gradient-overlay-hover link-icon">
-                                <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
-                            </figure>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="room-info">
-                                <h3 class="room-title">
-                                    <a href="{% url 'buy_house_details_page' %}">Vila</a>
-                                </h3>
-                                
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus animi quod adipisci quia? Laudantium quibusdam, mollitia nisi quasi perspiciatis omnis...</p>
-                                <div class="room-services">
-                                    <span>Area: 150m<sup>2</sup></span>
-                                    <span>Beds: 5</span>
-                                    <span>Bathrooms: 2</span>
+    
+                        <!-- START OF ITEM -->
+                        <div class="col-md-6">
+                            <!-- ITEM -->
+                            <div class="room-list-item">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <figure class="gradient-overlay-hover link-icon">
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="room-info">
+                                            <h3 class="room-title">
+                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
+                                            </h3>
+                                            
+                                            <p>
+                                                <!-- Location Icon -->
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                </span>
+    
+                                                <!-- Location -->
+                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
+                                            </p>
+                                            <div class="room-services">
+                                                <span>Area: 150m<sup>2</sup></span>
+                                                <span>Beds: 5</span>
+                                                <span>Bathrooms: 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="room-price">
-                                <span class="price">SR 890K</span>
-                                <a href="{% url 'buy_house_details_page' %}" class="btn btn-sm house-search-action-btn">VIEW DETAILS</a>
-                                <a href="{% url 'buy_house_details_page' %}" class="btn btn-sm house-search-action-btn">Request a tour</a>
+                        <!-- END OF ITEM -->
+                        
+                        <!-- START OF ITEM -->
+                        <div class="col-md-6">
+                            <!-- ITEM -->
+                            <div class="room-list-item">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <figure class="gradient-overlay-hover link-icon">
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="room-info">
+                                            <h3 class="room-title">
+                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
+                                            </h3>
+                                            
+                                            <p>
+                                                <!-- Location Icon -->
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                </span>
+    
+                                                <!-- Location -->
+                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
+                                            </p>
+                                            <div class="room-services">
+                                                <span>Area: 150m<sup>2</sup></span>
+                                                <span>Beds: 5</span>
+                                                <span>Bathrooms: 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- END OF ITEM -->
+
+                        <!-- START OF ITEM -->
+                        <div class="col-md-6">
+                            <!-- ITEM -->
+                            <div class="room-list-item">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <figure class="gradient-overlay-hover link-icon">
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="room-info">
+                                            <h3 class="room-title">
+                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
+                                            </h3>
+                                            
+                                            <p>
+                                                <!-- Location Icon -->
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                </span>
+    
+                                                <!-- Location -->
+                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
+                                            </p>
+                                            <div class="room-services">
+                                                <span>Area: 150m<sup>2</sup></span>
+                                                <span>Beds: 5</span>
+                                                <span>Bathrooms: 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ITEM -->
+
+                        <!-- START OF ITEM -->
+                        <div class="col-md-6">
+                            <!-- ITEM -->
+                            <div class="room-list-item">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <figure class="gradient-overlay-hover link-icon">
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="room-info">
+                                            <h3 class="room-title">
+                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
+                                            </h3>
+                                            
+                                            <p>
+                                                <!-- Location Icon -->
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                </span>
+    
+                                                <!-- Location -->
+                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
+                                            </p>
+                                            <div class="room-services">
+                                                <span>Area: 150m<sup>2</sup></span>
+                                                <span>Beds: 5</span>
+                                                <span>Bathrooms: 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ITEM -->
+
+                        <!-- START OF ITEM -->
+                        <div class="col-md-6">
+                            <!-- ITEM -->
+                            <div class="room-list-item">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <figure class="gradient-overlay-hover link-icon">
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="room-info">
+                                            <h3 class="room-title">
+                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
+                                            </h3>
+                                            
+                                            <p>
+                                                <!-- Location Icon -->
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                </span>
+    
+                                                <!-- Location -->
+                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
+                                            </p>
+                                            <div class="room-services">
+                                                <span>Area: 150m<sup>2</sup></span>
+                                                <span>Beds: 5</span>
+                                                <span>Bathrooms: 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ITEM -->
+
+                        <!-- START OF ITEM -->
+                        <div class="col-md-6">
+                            <!-- ITEM -->
+                            <div class="room-list-item">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <figure class="gradient-overlay-hover link-icon">
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="room-info">
+                                            <h3 class="room-title">
+                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
+                                            </h3>
+                                            
+                                            <p>
+                                                <!-- Location Icon -->
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                </span>
+    
+                                                <!-- Location -->
+                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
+                                            </p>
+                                            <div class="room-services">
+                                                <span>Area: 150m<sup>2</sup></span>
+                                                <span>Beds: 5</span>
+                                                <span>Bathrooms: 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ITEM -->
+
+                        <!-- START OF ITEM -->
+                        <div class="col-md-6">
+                            <!-- ITEM -->
+                            <div class="room-list-item">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <figure class="gradient-overlay-hover link-icon">
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="room-info">
+                                            <h3 class="room-title">
+                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
+                                            </h3>
+                                            
+                                            <p>
+                                                <!-- Location Icon -->
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                </span>
+    
+                                                <!-- Location -->
+                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
+                                            </p>
+                                            <div class="room-services">
+                                                <span>Area: 150m<sup>2</sup></span>
+                                                <span>Beds: 5</span>
+                                                <span>Bathrooms: 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ITEM -->
+
+                        <!-- START OF ITEM -->
+                        <div class="col-md-6">
+                            <!-- ITEM -->
+                            <div class="room-list-item">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <figure class="gradient-overlay-hover link-icon">
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="room-info">
+                                            <h3 class="room-title">
+                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
+                                            </h3>
+                                            
+                                            <p>
+                                                <!-- Location Icon -->
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                </span>
+    
+                                                <!-- Location -->
+                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
+                                            </p>
+                                            <div class="room-services">
+                                                <span>Area: 150m<sup>2</sup></span>
+                                                <span>Beds: 5</span>
+                                                <span>Bathrooms: 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ITEM -->
+                        
+                        <!-- START OF ITEM -->
+                        <div class="col-md-6">
+                            <!-- ITEM -->
+                            <div class="room-list-item">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <figure class="gradient-overlay-hover link-icon">
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="room-info">
+                                            <h3 class="room-title">
+                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
+                                            </h3>
+                                            
+                                            <p>
+                                                <!-- Location Icon -->
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                </span>
+    
+                                                <!-- Location -->
+                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
+                                            </p>
+                                            <div class="room-services">
+                                                <span>Area: 150m<sup>2</sup></span>
+                                                <span>Beds: 5</span>
+                                                <span>Bathrooms: 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ITEM -->
+
+                        <!-- START OF ITEM -->
+                        <div class="col-md-6">
+                            <!-- ITEM -->
+                            <div class="room-list-item">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <figure class="gradient-overlay-hover link-icon">
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="room-info">
+                                            <h3 class="room-title">
+                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
+                                            </h3>
+                                            
+                                            <p>
+                                                <!-- Location Icon -->
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                </span>
+    
+                                                <!-- Location -->
+                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
+                                            </p>
+                                            <div class="room-services">
+                                                <span>Area: 150m<sup>2</sup></span>
+                                                <span>Beds: 5</span>
+                                                <span>Bathrooms: 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ITEM -->
+
+                        <!-- START OF ITEM -->
+                        <div class="col-md-6">
+                            <!-- ITEM -->
+                            <div class="room-list-item">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <figure class="gradient-overlay-hover link-icon">
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="room-info">
+                                            <h3 class="room-title">
+                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
+                                            </h3>
+                                            
+                                            <p>
+                                                <!-- Location Icon -->
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                </span>
+    
+                                                <!-- Location -->
+                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
+                                            </p>
+                                            <div class="room-services">
+                                                <span>Area: 150m<sup>2</sup></span>
+                                                <span>Beds: 5</span>
+                                                <span>Bathrooms: 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ITEM -->
+
+                        <!-- START OF ITEM -->
+                        <div class="col-md-6">
+                            <!-- ITEM -->
+                            <div class="room-list-item">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <figure class="gradient-overlay-hover link-icon">
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="room-info">
+                                            <h3 class="room-title">
+                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
+                                            </h3>
+                                            
+                                            <p>
+                                                <!-- Location Icon -->
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                </span>
+    
+                                                <!-- Location -->
+                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
+                                            </p>
+                                            <div class="room-services">
+                                                <span>Area: 150m<sup>2</sup></span>
+                                                <span>Beds: 5</span>
+                                                <span>Bathrooms: 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ITEM -->
+
+                        <!-- START OF ITEM -->
+                        <div class="col-md-6">
+                            <!-- ITEM -->
+                            <div class="room-list-item">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <figure class="gradient-overlay-hover link-icon">
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="room-info">
+                                            <h3 class="room-title">
+                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
+                                            </h3>
+                                            
+                                            <p>
+                                                <!-- Location Icon -->
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                </span>
+    
+                                                <!-- Location -->
+                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
+                                            </p>
+                                            <div class="room-services">
+                                                <span>Area: 150m<sup>2</sup></span>
+                                                <span>Beds: 5</span>
+                                                <span>Bathrooms: 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ITEM -->
+
+                        <!-- START OF ITEM -->
+                        <div class="col-md-6">
+                            <!-- ITEM -->
+                            <div class="room-list-item">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <figure class="gradient-overlay-hover link-icon">
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="room-info">
+                                            <h3 class="room-title">
+                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
+                                            </h3>
+                                            
+                                            <p>
+                                                <!-- Location Icon -->
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                </span>
+    
+                                                <!-- Location -->
+                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
+                                            </p>
+                                            <div class="room-services">
+                                                <span>Area: 150m<sup>2</sup></span>
+                                                <span>Beds: 5</span>
+                                                <span>Bathrooms: 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ITEM -->
+
+                        <!-- START OF ITEM -->
+                        <div class="col-md-6">
+                            <!-- ITEM -->
+                            <div class="room-list-item">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <figure class="gradient-overlay-hover link-icon">
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="room-info">
+                                            <h3 class="room-title">
+                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
+                                            </h3>
+                                            
+                                            <p>
+                                                <!-- Location Icon -->
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                </span>
+    
+                                                <!-- Location -->
+                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
+                                            </p>
+                                            <div class="room-services">
+                                                <span>Area: 150m<sup>2</sup></span>
+                                                <span>Beds: 5</span>
+                                                <span>Bathrooms: 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ITEM -->
+
+                        <!-- START OF ITEM -->
+                        <div class="col-md-6">
+                            <!-- ITEM -->
+                            <div class="room-list-item">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <figure class="gradient-overlay-hover link-icon">
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="room-info">
+                                            <h3 class="room-title">
+                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
+                                            </h3>
+                                            
+                                            <p>
+                                                <!-- Location Icon -->
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                </span>
+    
+                                                <!-- Location -->
+                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
+                                            </p>
+                                            <div class="room-services">
+                                                <span>Area: 150m<sup>2</sup></span>
+                                                <span>Beds: 5</span>
+                                                <span>Bathrooms: 2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF ITEM -->
+    
                     </div>
+                    
+    
+                
+    
                 </div>
-
-            
-
-
-            </div>
-        </main>
-        <!-- END OF HOUSE DETAILS-->
+            </main>
+            <!-- END OF HOUSE DETAILS-->
+    
+        </div>
 
     </div>
 
