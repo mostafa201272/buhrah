@@ -22,7 +22,7 @@
 {% comment %} Header {% endcomment %}
 {% include 'pages/frontend/header.html' %}
 
-<section class="house-buy-filter container-fluid">
+<section class="house-buy-filter container">
 
     <div class="search-form-top">
 
@@ -94,15 +94,6 @@
 
     <div class="filter-body">
 
-        <div class="house-buy-filter-map-section">
-        
-            <div class="displayed-map">
-    
-                {{map|safe}}
-    
-            </div>
-        </div>
-    
         <div class="house-buy-filter-data-section">
     
             <!-- START OF HOUSE DETAILS-->
@@ -112,50 +103,13 @@
                     <div class="row">
     
                         <!-- START OF ITEM -->
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <!-- ITEM -->
                             <div class="room-list-item">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <figure class="gradient-overlay-hover link-icon">
-                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
-                                        </figure>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="room-info">
-                                            <h3 class="room-title">
-                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
-                                            </h3>
-                                            
-                                            <p>
-                                                <!-- Location Icon -->
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                                </span>
-    
-                                                <!-- Location -->
-                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
-                                            </p>
-                                            <div class="room-services">
-                                                <span>Area: 150m<sup>2</sup></span>
-                                                <span>Beds: 5</span>
-                                                <span>Bathrooms: 2</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END OF ITEM -->
-                        
-                        <!-- START OF ITEM -->
-                        <div class="col-md-6">
-                            <!-- ITEM -->
-                            <div class="room-list-item">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <figure class="gradient-overlay-hover link-icon">
-                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/brewster-mcleod-architects-1486154143.jpg" class="img-fluid" alt="Image"></a>
                                         </figure>
                                     </div>
                                     <div class="col-lg-12">
@@ -186,13 +140,13 @@
                         <!-- END OF ITEM -->
 
                         <!-- START OF ITEM -->
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <!-- ITEM -->
                             <div class="room-list-item">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <figure class="gradient-overlay-hover link-icon">
-                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/brewster-mcleod-architects-1486154143.jpg" class="img-fluid" alt="Image"></a>
                                         </figure>
                                     </div>
                                     <div class="col-lg-12">
@@ -223,13 +177,13 @@
                         <!-- END OF ITEM -->
 
                         <!-- START OF ITEM -->
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <!-- ITEM -->
                             <div class="room-list-item">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <figure class="gradient-overlay-hover link-icon">
-                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/brewster-mcleod-architects-1486154143.jpg" class="img-fluid" alt="Image"></a>
                                         </figure>
                                     </div>
                                     <div class="col-lg-12">
@@ -260,13 +214,13 @@
                         <!-- END OF ITEM -->
 
                         <!-- START OF ITEM -->
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <!-- ITEM -->
                             <div class="room-list-item">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <figure class="gradient-overlay-hover link-icon">
-                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/brewster-mcleod-architects-1486154143.jpg" class="img-fluid" alt="Image"></a>
                                         </figure>
                                     </div>
                                     <div class="col-lg-12">
@@ -297,13 +251,13 @@
                         <!-- END OF ITEM -->
 
                         <!-- START OF ITEM -->
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <!-- ITEM -->
                             <div class="room-list-item">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <figure class="gradient-overlay-hover link-icon">
-                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/brewster-mcleod-architects-1486154143.jpg" class="img-fluid" alt="Image"></a>
                                         </figure>
                                     </div>
                                     <div class="col-lg-12">
@@ -334,13 +288,13 @@
                         <!-- END OF ITEM -->
 
                         <!-- START OF ITEM -->
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <!-- ITEM -->
                             <div class="room-list-item">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <figure class="gradient-overlay-hover link-icon">
-                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/brewster-mcleod-architects-1486154143.jpg" class="img-fluid" alt="Image"></a>
                                         </figure>
                                     </div>
                                     <div class="col-lg-12">
@@ -371,50 +325,13 @@
                         <!-- END OF ITEM -->
 
                         <!-- START OF ITEM -->
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <!-- ITEM -->
                             <div class="room-list-item">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <figure class="gradient-overlay-hover link-icon">
-                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
-                                        </figure>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="room-info">
-                                            <h3 class="room-title">
-                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
-                                            </h3>
-                                            
-                                            <p>
-                                                <!-- Location Icon -->
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                                </span>
-    
-                                                <!-- Location -->
-                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
-                                            </p>
-                                            <div class="room-services">
-                                                <span>Area: 150m<sup>2</sup></span>
-                                                <span>Beds: 5</span>
-                                                <span>Bathrooms: 2</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END OF ITEM -->
-                        
-                        <!-- START OF ITEM -->
-                        <div class="col-md-6">
-                            <!-- ITEM -->
-                            <div class="room-list-item">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <figure class="gradient-overlay-hover link-icon">
-                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/brewster-mcleod-architects-1486154143.jpg" class="img-fluid" alt="Image"></a>
                                         </figure>
                                     </div>
                                     <div class="col-lg-12">
@@ -445,13 +362,13 @@
                         <!-- END OF ITEM -->
 
                         <!-- START OF ITEM -->
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <!-- ITEM -->
                             <div class="room-list-item">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <figure class="gradient-overlay-hover link-icon">
-                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/brewster-mcleod-architects-1486154143.jpg" class="img-fluid" alt="Image"></a>
                                         </figure>
                                     </div>
                                     <div class="col-lg-12">
@@ -482,13 +399,13 @@
                         <!-- END OF ITEM -->
 
                         <!-- START OF ITEM -->
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <!-- ITEM -->
                             <div class="room-list-item">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <figure class="gradient-overlay-hover link-icon">
-                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/brewster-mcleod-architects-1486154143.jpg" class="img-fluid" alt="Image"></a>
                                         </figure>
                                     </div>
                                     <div class="col-lg-12">
@@ -519,13 +436,13 @@
                         <!-- END OF ITEM -->
 
                         <!-- START OF ITEM -->
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <!-- ITEM -->
                             <div class="room-list-item">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <figure class="gradient-overlay-hover link-icon">
-                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/brewster-mcleod-architects-1486154143.jpg" class="img-fluid" alt="Image"></a>
                                         </figure>
                                     </div>
                                     <div class="col-lg-12">
@@ -556,13 +473,13 @@
                         <!-- END OF ITEM -->
 
                         <!-- START OF ITEM -->
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <!-- ITEM -->
                             <div class="room-list-item">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <figure class="gradient-overlay-hover link-icon">
-                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/brewster-mcleod-architects-1486154143.jpg" class="img-fluid" alt="Image"></a>
                                         </figure>
                                     </div>
                                     <div class="col-lg-12">
@@ -593,13 +510,13 @@
                         <!-- END OF ITEM -->
 
                         <!-- START OF ITEM -->
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <!-- ITEM -->
                             <div class="room-list-item">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <figure class="gradient-overlay-hover link-icon">
-                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
+                                            <a href="{% url 'buy_house_details_page' %}"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/brewster-mcleod-architects-1486154143.jpg" class="img-fluid" alt="Image"></a>
                                         </figure>
                                     </div>
                                     <div class="col-lg-12">
@@ -629,84 +546,8 @@
                         </div>
                         <!-- END OF ITEM -->
 
-                        <!-- START OF ITEM -->
-                        <div class="col-md-6">
-                            <!-- ITEM -->
-                            <div class="room-list-item">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <figure class="gradient-overlay-hover link-icon">
-                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
-                                        </figure>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="room-info">
-                                            <h3 class="room-title">
-                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
-                                            </h3>
-                                            
-                                            <p>
-                                                <!-- Location Icon -->
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                                </span>
-    
-                                                <!-- Location -->
-                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
-                                            </p>
-                                            <div class="room-services">
-                                                <span>Area: 150m<sup>2</sup></span>
-                                                <span>Beds: 5</span>
-                                                <span>Bathrooms: 2</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END OF ITEM -->
-
-                        <!-- START OF ITEM -->
-                        <div class="col-md-6">
-                            <!-- ITEM -->
-                            <div class="room-list-item">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <figure class="gradient-overlay-hover link-icon">
-                                            <a href="{% url 'buy_house_details_page' %}"><img src="{% static 'frontend/images/rooms/single/single1.jpg' %}" class="img-fluid" alt="Image"></a>
-                                        </figure>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="room-info">
-                                            <h3 class="room-title">
-                                                <a href="{% url 'buy_house_details_page' %}">SR 890K</a>
-                                            </h3>
-                                            
-                                            <p>
-                                                <!-- Location Icon -->
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                                </span>
-    
-                                                <!-- Location -->
-                                                <span>17011 Hidden Treasure Cir, Friendswood, TX 77546</span>
-                                            </p>
-                                            <div class="room-services">
-                                                <span>Area: 150m<sup>2</sup></span>
-                                                <span>Beds: 5</span>
-                                                <span>Bathrooms: 2</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END OF ITEM -->
-    
                     </div>
                     
-    
-                
     
                 </div>
             </main>
@@ -736,7 +577,24 @@
     <div class="mobile-map-view" id="mobile-map-view">
 
         <!-- Search filter -->
-        <div>
+        <div class="full-map-filter">
+
+            <!-- ========== SEARCHING FORM ========== -->
+            <div class="search-house-form">
+
+                <form id="booking-form">
+                    
+                    <div class="input-group">
+                        <button class="btn" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sliders"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+                        </button>
+                        <input type="text" class="form-control" placeholder="Location" aria-label="Location" aria-describedby="button-addon2">
+                        <button class="btn" type="button">Find</button>
+                    </div>
+
+                </form>
+            </div>
+
 
         </div>
 

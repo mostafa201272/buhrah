@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    font-family: 'Rubik', sans-serif !important;
+}
+
 .loader3 .spin img{
     margin: 10%;
     max-width: 100%;
@@ -54,7 +60,6 @@ footer .footer-widgets .footer-widget .footer-logo{
 .house-buy-filter{
     display: flex;
     padding: 0;
-    height: 100vh;
     flex-direction: column; 
     justify-content: flex-end;
 }
@@ -63,10 +68,7 @@ footer .footer-widgets .footer-widget .footer-logo{
     display: flex;
     height: 100%;
 }
-.house-buy-filter .filter-body > div{
-    width: 50%;
-    height: calc(100vh - 90px);
-}
+
 .house-buy-filter .house-buy-filter-map-section{
     overflow: hidden;
 }
@@ -83,16 +85,7 @@ footer .footer-widgets .footer-widget .footer-logo{
 .house-buy-filter .house-buy-filter-map-section img{
     width: 100%;
 }
-.house-buy-filter .house-buy-filter-data-section{
-    overflow-y: scroll;
-    position: relative;
-    box-shadow: -2px 2px 5px 0 rgb(0 0 0 / 40%);
 
-}
-
-.search-form-top{
-    border-bottom: 1px solid #ccc;
-}
 
 .search-form-top .search-house-form{
     width: 100%;
@@ -123,150 +116,37 @@ footer .footer-widgets .footer-widget .footer-logo{
     box-shadow: 0 3px 14px rgb(0 0 0 / 40%) !important;
     border-radius: 2px !important;
     position: relative !important;
+    padding: 0 !important;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content{
+    margin: 0 !important;
+}
+.leaflet-container a{
+    color: #111;
 }
 
-.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .favorite-item ,
-.room-list-item .favorite-item {
-    color: #ffffff;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    text-align: right;
-    float: right;
-    margin-bottom: -50px;
-    z-index: 1;
-    padding-right: 7px;
-    padding-top: 7px;
-    line-height: 1;
+.map-card-container{
+	display: block;
+    width: 300px;
+	overflow: hidden;
+	background-color: #fff;
 }
-.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .favorite-item:before ,
-.room-list-item .favorite-item:before {
-    content: " ";
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    display: block;
-    border-top: 50px solid #edcb9a;
-    border-left: 50px solid transparent;
-    top: 0;
-    left: auto;
-    right: 0;
+
+.map-card-container .map-card-image,
+.map-card-container .map-card-image img{
+	width: 100%;
 }
-.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .favorite-item i ,
-.room-list-item .favorite-item i {
-    position: relative;
-    z-index: 2;
+
+.map-card-container .map-card-details{
+	padding: 10px;
 }
-.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item figure a:before ,
-.room-list-item figure a:before {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 10px;
-    right: 0px;
-    bottom: 10px;
-    left: 10px;
-    border: 5px double rgba(255, 255, 255, 0.5);
-    z-index: 1;
-    border-right: none;
-    -webkit-transition: 1s;
-    transition: 1s;
-}
-.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info ,
-.room-list-item .room-info {
-    padding: 15px 0;
-}
-.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info .room-title ,
-.room-list-item .room-info .room-title {
-    margin-top: 0;
-}
-.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info .room-title a ,
-.room-list-item .room-info .room-title a {
-    color: #d7d8d9;
-    font-size: 24px;
-    font-weight: 500;
-    position: relative;
-    z-index: 9;
-    text-transform: uppercase;
-}
-.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info .room-rates ,
-.room-list-item .room-info .room-rates {
-    margin-bottom: 5px;
-    text-transform: uppercase;
-}
-.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info .room-rates i ,
-.room-list-item .room-info .room-rates i {
-    font-size: 13px;
-    color: #ffb600;
-}
-.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-info .room-rates a ,
-.room-list-item .room-info .room-rates a {
-    margin-left: 5px;
-    font-size: 12px;
-}
-.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-price ,
-.room-list-item .room-price {
-    text-align: center;
-    padding: 10px;
-    height: 100%;
-    border-left: 1px dashed #efefef;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-price .price ,
-.room-list-item .room-price .price {
-    margin-bottom: 30px;
-    font-size: 20px;
-    color: #edcb9a;
-    text-transform: uppercase;
-}
-.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-services ,
-.room-list-item .room-services {
-    margin-top: 38px;
-}
-.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-services i ,
-.room-list-item .room-services i {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #e3e3e3;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    text-align: center;
-    line-height: 30px;
-    color: #afafaf;
-    border-radius: 1px;
-    font-size: 11px;
-    -webkit-transition: .5s;
-    transition: .5s;
-}
-.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-services span ,
-.room-list-item .room-services span {
-    height: 30px;
-    display: inline-block;
-    padding: 0 8px;
-    border: 1px solid #e3e3e3;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    text-align: center;
-    line-height: 30px;
-    color: #afafaf;
-    border-radius: 1px;
-    font-size: 12px;
-    -webkit-transition: .5s;
-    transition: .5s;
-}
-.leaflet-popup-content-wrapper .leaflet-popup-content .room-list-item .room-services i:hover, .room-list-item .room-services span:hover ,
-.room-list-item .room-services i:hover, .room-list-item .room-services span:hover {
-    cursor: pointer;
-    background: #e3e3e3;
+
+.map-card-container .map-card-details .map-card-details-price{
+	display: inline-block;
+	background-color: #eee;
+	padding: 10px 20px;
+	border-radius: 5px;
+    font-size: 2rem;
 }
 
 .room-list-item .room-info{
@@ -276,6 +156,7 @@ footer .footer-widgets .footer-widget .footer-logo{
     right: 10px;
     border-right: 5px double rgba(255, 255, 255, 0.5);
 }
+
 
 /* START OF MAP TOOL TIP*/
 
@@ -336,13 +217,12 @@ footer .footer-widgets .footer-widget .footer-logo{
 /* START OF MOBILE MAP */
 .mobile-map-displayer,
 .mobile-list-displayer{
-    display: none;
     position: fixed;
     bottom: 55px;
     left: 50%;
     transform: translate(-50%, -10%);
     z-index: 1022;
-    background: #edcb9a;
+    background: #ac8938;
     border-radius: 4px;
     text-align: center;
     -webkit-box-shadow: 0 5px 10px 0 rgb(35 50 56 / 15%);
@@ -357,6 +237,7 @@ footer .footer-widgets .footer-widget .footer-logo{
 }
 .btn:hover, .btn:focus, .btn:active{
     height: 100%;
+    background-color: #ac8938;
 }
 
 .mobile-map-view{
@@ -374,6 +255,49 @@ footer .footer-widgets .footer-widget .footer-logo{
 .mobile-map-view-map > div > div{
     width: 100% !important;
     height: 100% !important;
+}
+
+.full-map-filter{
+    width: 80%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    z-index: 1;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.full-map-filter .search-house-form{
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.full-map-filter .search-house-form form .input-group input{
+    background-color: #fff;
+    border: 1px solid #ac8938;
+    color: #ac8938;
+    border-left: 0;
+    border-right: 0;
+}
+
+.full-map-filter .search-house-form form .btn:hover, 
+.full-map-filter .search-house-form form .btn:focus, 
+.full-map-filter .search-house-form form .btn:active{
+    background-color: #ac8938;
+    height: auto;
+}
+
+.input-group{
+    flex-wrap: nowrap !important;
+}
+.input-group .form-control{
+    min-width: 50%;
+}
+
+.back-to-top,
+.toggle-menu-button .line{
+    background-color: #ac8938;
 }
 
 @media(max-width: 992px){
@@ -394,6 +318,9 @@ footer .footer-widgets .footer-widget .footer-logo{
     }
 }
 
+.btn{
+    background-color: #ac8938;
+}
 
 
 /* END OF MOBILE MAP */
