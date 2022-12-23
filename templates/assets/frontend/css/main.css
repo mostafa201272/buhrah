@@ -382,6 +382,16 @@ footer .footer-widgets .footer-widget .footer-logo{
         display: flex !important;
         align-items: flex-end !important;
     }
+
+        
+    label {
+        font-size: 12px;
+    }
+
+    .form-control, .form-control[readonly] {
+        font-size: 12px;
+        word-break: break-all;
+    }
 }
 
 
