@@ -18,6 +18,9 @@
 {% block currentBodyContent %}
 {% csrf_token %}
 
+    {% comment %} Header {% endcomment %}
+    {% include 'pages/frontend/header.html' %}
+
     <!-- ========== REVOLUTION SLIDER ========== -->
     <div class="slider">
         <div id="rev-slider-1" class="rev_slider gradient-slider" style="display:none" data-version="5.4.5">
@@ -491,7 +494,8 @@
     </section>
     <!-- ========== END OF CONTACT ==========-->
 
-
+    {% comment %} Footer {% endcomment %}
+    {% include 'pages/frontend/footer.html' %}
     
 {% endblock currentBodyContent %}
 

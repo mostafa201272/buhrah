@@ -1,0 +1,84 @@
+{% load static%}
+
+<!-- ========== TOP MENU ========== -->
+<div class="topbar">
+    <div class="container">
+    <div class="welcome-mssg">
+        Welcome to Buhrah.
+    </div>
+    <div class="top-right-menu">
+        <ul class="top-menu">
+        <li class="d-none d-md-inline">
+            <a href="tel:+966000000 000">
+            <i class="fa fa-phone"></i>+966 000 000 000
+            </a>
+        </li>
+        <li class="d-none d-md-inline">
+            <a href="mailto:contact@hotelhimara.com">
+            <i class="fa fa-envelope-o "></i>contact@buhrah.com</a>
+        </li>
+        <li class="language-menu">
+            <a href="#" class="active-language"><img src="{% static 'frontend/icons/us.png' %}" alt="English">English</a>
+            <ul class="languages">
+                <li class="language">
+                    <a href="#"><img src="{% static 'frontend/icons/sa.png' %}" alt="Arabic">Arabic</a>
+                </li>
+            </ul>
+        </li>
+        </ul>
+    </div>
+    </div>
+</div>
+<!-- ========== END OF TOP MENU ========== -->
+
+<!-- ========== HEADER ========== -->
+<header class="horizontal-header sticky-header" data-menutoggle="991">
+    
+    <div class="container">
+        <!-- BRAND -->
+        <div class="brand">
+            <div class="logo">
+            <a href="{% url 'HomePage' %}">
+                <img src="{% static 'base/images/logo.svg' %}" alt="Hotel Himara">
+            </a>
+            </div>
+        </div>
+        <!-- MOBILE MENU BUTTON -->
+        <div id="toggle-menu-button" class="toggle-menu-button">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+
+        <!-- MAIN MENU -->
+        <nav id="main-menu" class="main-menu">
+            <ul class="menu">
+                <li class="menu-item dropdown active">
+                    <a href="{% url 'HomePage' %}">home</a>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="{% url 'buy_search_page' %}">buy</a>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="{% url 'sell_page' %}">sell</a>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="{% url 'financial' %}">Finance Solutions</a>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="{% url 'blogs' %}">BLOG</a>
+                </li>
+                <li class="menu-item">
+                    <a href="{% url 'contact' %}">CONTACT US</a>
+                </li>
+                <li class="menu-item menu-btn">
+                    <a href="{% url 'Login' %}" class="btn btn-outline">Log in</a>
+                </li>
+                <li class="menu-item menu-btn">
+                    <a href="{% url 'Registeration' %}" class="btn">Join</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- =======    === END OF HEADER ========== -->

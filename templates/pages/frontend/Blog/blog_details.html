@@ -18,6 +18,9 @@
 {% block currentBodyContent %}
 {% csrf_token %}
 
+{% comment %} Header {% endcomment %}
+{% include 'pages/frontend/header.html' %}
+
 <!-- BLOG POST COVER -->
 <div class="blog-post-cover gradient-overlay op5" data-src="images/blog/post/blog-full.jpg" data-parallax="scroll" data-speed="0.3" data-mirror-selector=".wrapper" data-z-index="0">
     <div class="container inner">
@@ -369,6 +372,8 @@
 </main>
 <!-- END BLOG LIST -->
 
+{% comment %} Footer {% endcomment %}
+{% include 'pages/frontend/footer.html' %}
 
 {% endblock currentBodyContent %}
 

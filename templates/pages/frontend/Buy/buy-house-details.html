@@ -18,6 +18,10 @@
 {% block currentBodyContent %}
 {% csrf_token %}
 
+
+{% comment %} Header {% endcomment %}
+{% include 'pages/frontend/header.html' %}
+
 <!-- ========== PAGE TITLE ========== -->
 <div class="page-title gradient-overlay op5" style="background: url(images/breadcrumb.jpg); background-repeat: no-repeat;background-size: cover;">
     <div class="container">
@@ -360,6 +364,10 @@
       </div>
     </div>
 </main>
+
+
+{% comment %} Footer {% endcomment %}
+{% include 'pages/frontend/footer.html' %}
 
 {% endblock currentBodyContent %}
 

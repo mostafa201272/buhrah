@@ -61,6 +61,10 @@ def buy_search_page(request):
     # folium.Marker([lat, lng], tooltip="view", popup=temp, icon=folium.Icon(color="orange", icon='home')).add_to(buy_map)
     folium.Marker([30, 30], tooltip="view", popup=temp, icon=folium.Icon(color="orange")).add_to(buy_map)
     
+
+    # GEO Jason
+    
+
     # Generate HTML MAP
     buy_map.default_css.append(("buhrah_styles","/static/frontend/css/main.css",))
     buy_map = buy_map._repr_html_()

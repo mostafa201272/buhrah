@@ -18,6 +18,12 @@
 {% block currentBodyContent %}
 {% csrf_token %}
 
+{% comment %} Header {% endcomment %}
+{% include 'pages/frontend/header.html' %}
+
+{% comment %} Footer {% endcomment %}
+{% include 'pages/frontend/footer.html' %}
+
     
 {% endblock currentBodyContent %}
 

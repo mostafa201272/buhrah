@@ -67,213 +67,22 @@
         <!-- ========== WRAPPER ========== -->
         <div class="wrapper">  
 
-            <!-- ========== TOP MENU ========== -->
-            <div class="topbar">
-                <div class="container">
-                <div class="welcome-mssg">
-                    Welcome to Buhrah.
-                </div>
-                <div class="top-right-menu">
-                    <ul class="top-menu">
-                    <li class="d-none d-md-inline">
-                        <a href="tel:+966000000 000">
-                        <i class="fa fa-phone"></i>+966 000 000 000
-                        </a>
-                    </li>
-                    <li class="d-none d-md-inline">
-                        <a href="mailto:contact@hotelhimara.com">
-                        <i class="fa fa-envelope-o "></i>contact@buhrah.com</a>
-                    </li>
-                    <li class="language-menu">
-                        <a href="#" class="active-language"><img src="{% static 'frontend/icons/us.png' %}" alt="English">English</a>
-                        <ul class="languages">
-                            <li class="language">
-                                <a href="#"><img src="{% static 'frontend/icons/sa.png' %}" alt="Arabic">Arabic</a>
-                            </li>
-                        </ul>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-            <!-- ========== END OF TOP MENU ========== -->
-
-            <!-- ========== HEADER ========== -->
-            <header class="horizontal-header sticky-header" data-menutoggle="991">
-                
-                <div class="container">
-                    <!-- BRAND -->
-                    <div class="brand">
-                        <div class="logo">
-                        <a href="{% url 'HomePage' %}">
-                            <img src="{% static 'base/images/logo.svg' %}" alt="Hotel Himara">
-                        </a>
-                        </div>
-                    </div>
-                    <!-- MOBILE MENU BUTTON -->
-                    <div id="toggle-menu-button" class="toggle-menu-button">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                    </div>
-
-                    <!-- MAIN MENU -->
-                    <nav id="main-menu" class="main-menu">
-                        <ul class="menu">
-                            <li class="menu-item dropdown active">
-                                <a href="{% url 'HomePage' %}">home</a>
-                            </li>
-                            <li class="menu-item dropdown">
-                                <a href="{% url 'buy_search_page' %}">buy</a>
-                            </li>
-                            <li class="menu-item dropdown">
-                                <a href="{% url 'sell_page' %}">sell</a>
-                            </li>
-                            <li class="menu-item dropdown">
-                                <a href="{% url 'financial' %}">Finance Solutions</a>
-                            </li>
-                            <li class="menu-item dropdown">
-                                <a href="{% url 'blogs' %}">BLOG</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="{% url 'contact' %}">CONTACT US</a>
-                            </li>
-                            <li class="menu-item menu-btn">
-                                <a href="{% url 'Login' %}" class="btn btn-outline">Log in</a>
-                            </li>
-                            <li class="menu-item menu-btn">
-                                <a href="{% url 'Registeration' %}" class="btn">Join</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <!-- =======    === END OF HEADER ========== -->
-
-
             <!-- Page Content-->
             {% block currentBodyContent %} {% endblock currentBodyContent %}
-
-            <!-- ========== FOOTER ========== -->
-            <footer>
-                <div class="footer-widgets">
-                    <div class="container">
-                        <div class="row">
-                            <!-- WIDGET -->
-                            <div class="col-md-3">
-                                <div class="footer-widget">
-                                    <img src="{% static 'base/images/logo.svg' %}" class="footer-logo" alt="Buhrah">
-                                    <div class="inner">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, velit placeat assumenda incidunt dolorem aliquam!</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- WIDGET -->
-                            <div class="col-md-3">
-                                <div class="footer-widget">
-                                <h3>posts</h3>
-                                <div class="inner">
-                                    <ul class="latest-posts">
-                                    <li>
-                                        <a href="blog-post.html">10 Tips for holiday travel</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-post.html">Are you ready to enjoy your holidays</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-post.html">Honeymoon with Buhrah</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-post.html">Travel gift ideas for every type of traveler</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-post.html">Breakfast with coffee and orange juice</a>
-                                    </li>
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
-
-                            <!-- WIDGET -->
-                            <div class="col-md-3">
-                                <div class="footer-widget">
-                                    <h3>USEFUL LINKS</h3>
-                                    <div class="inner">
-                                        <ul class="useful-links">
-                                            <li>
-                                                <a href="#">About Us</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Contact Us</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Finance Solutions</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Blog</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- WIDGET -->
-                            <div class="col-md-3">
-                                <div class="footer-widget">
-                                <h3>Contact Info</h3>
-                                <div class="inner">
-                                    <ul class="contact-details">
-                                        <li>
-                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                            Lorem ipsum dolor, 25, Buhrah</li>
-                                        <li>
-                                            <i class="fa fa-phone" aria-hidden="true"></i>
-                                            Phone: +966 000 000 000
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-fax"></i>
-                                            Fax: +966 000 000 000</li>
-                                        <li>
-                                            <i class="fa fa-globe"></i>
-                                            Web: www.buhrah.com</li>
-                                        <li>
-                                            <i class="fa fa-envelope"></i>
-                                            Email:
-                                            <a href="mailto:info@site.com">contact@buhrah.com</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SUBFOOTER -->
-                <div class="subfooter">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="copyrights">&copy; 2022 Buhrah. Designed by
-                                <a href="https://elsherbiniy.com/" target="_blank">El-sherbiniy</a>.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!-- ========== END OF FOOTER ========== -->
-
+            
         </div>
         <!-- ========== END OF WRAPPER ========== -->
 
         <!-- ========== CONTACT NOTIFICATION ========== -->
         <div id="contact-notification" class="notification fixed"></div>
+        
         <!-- ========== BACK TO TOP ========== -->
         <div class="back-to-top">
             <i class="fa fa-angle-up" aria-hidden="true"></i>
         </div>
+
+        {% comment %} Extra html {% endcomment %}
+        {% block extra_html %} {% endblock extra_html %}
 
         <!-- Required Scripts -->
         <script src="{% static 'frontend/js/jquery.min.js' %}"></script>

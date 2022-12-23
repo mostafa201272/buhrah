@@ -18,6 +18,9 @@
 {% block currentBodyContent %}
 {% csrf_token %}
 
+    {% comment %} Header {% endcomment %}
+    {% include 'pages/frontend/header.html' %}
+
     <!-- ========== MAIN ========== -->
     <main>
         <div class="container">
@@ -382,6 +385,8 @@
         </div>
     </main>
 
+    {% comment %} Footer {% endcomment %}
+    {% include 'pages/frontend/footer.html' %}
 
 {% endblock currentBodyContent %}
 
