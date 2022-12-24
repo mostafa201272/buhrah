@@ -1,4 +1,13 @@
+/* START OF FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/* END OF FONTS */
+
+/* START OF CSS VARIABLES */
+/* 0:ac8938 1:e91e63 2:04b7a4 */
+:root{
+    --main-site-color: #04b7a4; 
+}
+/* END OF CSS VARIABLES */
 
 *{
     font-family: 'Rubik', sans-serif;
@@ -12,10 +21,26 @@
 .loader3 .spin span{
     border-width: 3px;
     border-style: solid;
-    border-color: #ac8938 #efefef #efefef;  
+    border-color: var(--main-site-color) #efefef #efefef;  
 }
+
+
+.loader3 .spin div{
+    display: inline-block;
+    height: 100%;
+}
+.loader3 .spin div svg{
+    display: inline-block;
+    height: 80%;
+    width: 100%;
+    margin-top: 50%;
+}
+.loader3 .spin div svg path{
+    fill: var(--main-site-color);
+}
+
 .topbar {
-    background: #ac8938;
+    background: var(--main-site-color);
     color: #fff;
 }
 
@@ -30,6 +55,18 @@ header .brand .logo img{
     width: 100%;
 }
 
+header .brand .logo span{
+    display: inline-block;
+}
+header .brand .logo span svg{
+    width: 115px;
+    display: inline-block;
+    height: auto;
+}
+header .brand .logo span svg rect{
+    fill: var(--main-site-color);
+}
+
 .horizontal-header .container{
     display: flex;
     flex-direction: row;
@@ -38,22 +75,59 @@ header .brand .logo img{
     flex-wrap: nowrap;
 }
 header.horizontal-header .main-menu .menu .menu-item.menu-btn .btn{
-    background-color: #ac8938;
+    background-color: var(--main-site-color);
     border-radius: 5px;
     margin-left: 10px;
 }
 header.horizontal-header .main-menu .menu .menu-item.menu-btn .btn-outline{
     background-color: #fff;
-    border: 2px solid #ac8938;
-    color: #ac8938;
+    border: 2px solid var(--main-site-color);
+    color: var(--main-site-color);
     
+}
+
+header.horizontal-header .main-menu .menu .menu-item a:hover, 
+header.horizontal .main-menu .menu .menu-item a:focus, 
+header.horizontal-header .main-menu .menu .menu-item.open a, 
+header.horizontal-header .main-menu .menu .menu-item.active a {
+    color: var(--main-site-color);
 }
 
 footer .footer-widgets .footer-widget .footer-logo{
     width: 80%;
 }
+footer .footer-widgets .footer-widget span{
+    display: inline-block;
+}
+footer .footer-widgets .footer-widget span svg{
+    max-width: 100%;
+    height: auto;
+}
+footer .footer-widgets .footer-widget span svg rect{
+    fill: var(--main-site-color);
+}
+
 .brand-info .inner .content img{
     max-height: 200px;
+}
+
+.brand-info .inner .content div{
+    height: 100%;
+}
+
+
+.brand-info .inner .content div svg{
+    max-height: 200px;
+    height: 200px;
+    width: auto;
+}
+.brand-info .inner .content div svg path{
+    fill: var(--main-site-color);
+}
+
+.brand-info .inner .stars i,
+.brand-info .inner .title{
+    color: var(--main-site-color) !important;
 }
 
 /* BUY PAGE */
@@ -229,7 +303,7 @@ footer .footer-widgets .footer-widget .footer-logo{
     left: 50%;
     transform: translate(-50%, -10%);
     z-index: 1022;
-    background: #ac8938;
+    background: var(--main-site-color);
     border-radius: 4px;
     text-align: center;
     -webkit-box-shadow: 0 5px 10px 0 rgb(35 50 56 / 15%);
@@ -242,9 +316,10 @@ footer .footer-widgets .footer-widget .footer-logo{
     border-radius: 5px;
     overflow: hidden;
 }
-.btn:hover, .btn:focus, .btn:active{
-    height: 100%;
-    background-color: #ac8938;
+.btn:hover, 
+.btn:focus, 
+.btn:active{
+    background-color: var(--main-site-color);
 }
 
 .mobile-map-view{
@@ -282,8 +357,8 @@ footer .footer-widgets .footer-widget .footer-logo{
 
 .full-map-filter .search-house-form form .input-group input{
     background-color: #fff;
-    border: 1px solid #ac8938;
-    color: #ac8938;
+    border: 1px solid var(--main-site-color);
+    color: var(--main-site-color);
     border-left: 0;
     border-right: 0;
     border-radius: 0 !important;
@@ -295,7 +370,7 @@ footer .footer-widgets .footer-widget .footer-logo{
 .full-map-filter .search-house-form form .btn:hover, 
 .full-map-filter .search-house-form form .btn:focus, 
 .full-map-filter .search-house-form form .btn:active{
-    background-color: #ac8938;
+    background-color: var(--main-site-color);
     height: auto;
 }
 
@@ -308,7 +383,7 @@ footer .footer-widgets .footer-widget .footer-logo{
 
 .back-to-top,
 .toggle-menu-button .line{
-    background-color: #ac8938;
+    background-color: var(--main-site-color);
 }
 
 .form-control, .form-control[readonly]{
@@ -338,7 +413,7 @@ footer .footer-widgets .footer-widget .footer-logo{
 }
 
 .btn{
-    background-color: #ac8938;
+    background-color: var(--main-site-color);
 }
 /* END OF MOBILE MAP */
 
@@ -346,7 +421,7 @@ footer .footer-widgets .footer-widget .footer-logo{
 .icons{
     height: 50px;
     width: 50px;
-    background: #ac8938;
+    background: var(--main-site-color);
     border-radius: 4px;
     right: 30px;
     bottom: 60px;
@@ -372,7 +447,7 @@ footer .footer-widgets .footer-widget .footer-logo{
     padding: 10px;
     color: #fff;
     border-radius: 5px;
-    z-index: 999;
+    z-index: 1;
     cursor: pointer;
 }
 

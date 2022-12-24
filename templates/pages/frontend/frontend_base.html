@@ -54,7 +54,15 @@
             <div class="loader-inner">
                 <div class="spin">
                     <span></span>
-                    <img src="{% static 'base/images/icon.svg' %}" alt="Buhrah">
+
+                    {% comment %} <img src="{% static 'base/images/icon.svg' %}" alt="Buhrah"> {% endcomment %}
+                    
+                    {% comment %} Loading icon {% endcomment %}
+                    <div>
+                        {% include 'pages/frontend/icon.html' %}
+                    </div>
+                    {% comment %} END OF LOADING ICON {% endcomment %}
+
                 </div>
             </div>
         </div>

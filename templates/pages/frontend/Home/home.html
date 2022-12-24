@@ -302,16 +302,26 @@
                 <div class="brand-info" style="background-image: url({% static 'frontend/images/about-card.jpg' %});">
                 <div class="inner">
                     <div class="content">
-                    <img src="{% static 'base/images/icon.svg' %}" width="100" alt="Image">
-                    <div class="stars">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                    </div>
-                    <h5 class="title">LUXURY SERVICE</h5>
-                    <p class="mt20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem iste suscipit voluptates architecto nemo.</p>
+                    
+                        {% comment %} <img src="{% static 'base/images/icon.svg' %}" width="100" alt="Image"> {% endcomment %}
+
+                        {% comment %} Loading icon {% endcomment %}
+                        <div>
+                            {% include 'pages/frontend/icon.html' %}
+                        </div>
+                        {% comment %} END OF LOADING ICON {% endcomment %}
+
+
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    
+                        <h5 class="title">LUXURY SERVICE</h5>
+                        <p class="mt20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem iste suscipit voluptates architecto nemo.</p>
                     </div>
                 </div>
                 </div>
