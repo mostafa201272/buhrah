@@ -149,12 +149,19 @@ footer .footer-widgets .footer-widget .footer-logo{
     font-size: 2rem;
 }
 
+.room-list-item{
+    border: 0 !important;
+}
+.room-list-item figure{
+    border-radius: 7px;
+    overflow: hidden;
+}
 .room-list-item .room-info{
-    padding: 15px;
+    padding: 10px 0 0 0;
 }
 .room-list-item figure a:before{
     right: 10px;
-    border-right: 5px double rgba(255, 255, 255, 0.5);
+    border: 0 double rgba(255, 255, 255, 0.5);
 }
 
 
@@ -362,8 +369,7 @@ footer .footer-widgets .footer-widget .footer-logo{
     background-color: #111111c4;
     padding: 10px;
     color: #fff;
-    border-radius: 5px 0 0 0;
+    border-radius: 5px;
     z-index: 999;
     cursor: pointer;
 }
-
