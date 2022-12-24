@@ -86,5 +86,10 @@
 
 <!-- Scripting files -->
 {% block currentPageScriptsFiles %}
-
+<script>
+    $(function(){
+        // Active current page
+        $(".menu-item.contact_page").addClass("active").siblings().removeClass("active");
+    })
+</script>
 {% endblock currentPageScriptsFiles %}
