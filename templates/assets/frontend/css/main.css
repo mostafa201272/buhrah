@@ -286,8 +286,12 @@ footer .footer-widgets .footer-widget .footer-logo{
     color: #ac8938;
     border-left: 0;
     border-right: 0;
+    border-radius: 0 !important;
 }
 
+.full-map-filter .search-house-form form .btn{
+    padding: 0.375rem 0.75rem;
+}
 .full-map-filter .search-house-form form .btn:hover, 
 .full-map-filter .search-house-form form .btn:focus, 
 .full-map-filter .search-house-form form .btn:active{
@@ -344,7 +348,7 @@ footer .footer-widgets .footer-widget .footer-logo{
     width: 50px;
     background: #ac8938;
     border-radius: 4px;
-    right: 60px;
+    right: 30px;
     bottom: 60px;
     position: fixed;
     text-align: center;
@@ -361,15 +365,42 @@ footer .footer-widgets .footer-widget .footer-logo{
     background: #4caf50
 }
 
-
 .fav-icon{
     position: absolute;
-    bottom: 0px;
+    top: 0px;
     right: 15px;
-    background-color: #111111c4;
     padding: 10px;
     color: #fff;
     border-radius: 5px;
     z-index: 999;
     cursor: pointer;
 }
+
+/* START OF BUY CARD SLIDER */
+.house-card-slider{
+    min-height: 250px;
+}
+.house-card-slider .house-card-image-slider,
+.house-card-slider .house-card-image-slider .carousel-inner,
+.house-card-slider .house-card-image-slider .carousel-inner .carousel-item,
+.house-card-slider .house-card-image-slider .carousel-inner .carousel-item img{
+    height: 100%;
+}
+.house-card-slider .house-card-image-slider{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.house-card-slider .house-card-image-slider .carousel-inner .carousel-item img{
+   object-fit: cover;
+}
+.house-card-slider .house-card-image-slider .carousel-indicators{
+    bottom: -10px;
+}
+.house-card-slider .house-card-image-slider .carousel-indicators li{
+    width: 7.5px;
+    height: 7.5px;
+    border-radius: 50%;
+}
+/* END OF BUY CARD SLIDER */
+
+
