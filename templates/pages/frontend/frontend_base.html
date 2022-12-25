@@ -94,6 +94,10 @@
             <i class="fa fa-whatsapp"></i>
         </div>
 
+        <div class="change-color">
+            <input type="color" id="page-color-change" />
+        </div>
+
         {% comment %} Extra html {% endcomment %}
         {% block extra_html %} {% endblock extra_html %}
 
@@ -120,6 +124,27 @@
         <script src="{% static 'frontend/js/instafeed.min.js' %}"></script>
         <script src="{% static 'frontend/js/main.js' %}"></script>
         
+
+        <script>
+
+            var r = document.querySelector(':root');
+
+            function myFunction_set(value) {
+                // Set the value of variable --blue to another value (in this case "lightblue")
+                r.style.setProperty('--main-site-color', `${value}`);
+            }
+
+            $(function (){
+
+                $(document).on('input', "#page-color-change", function(){
+                    console.log($(this).val())
+                    myFunction_set($(this).val())
+                })
+
+
+            });
+        </script>
+
         <!-- Current Page Scripts Files -->
         {% block currentPageScriptsFiles %} {% endblock currentPageScriptsFiles %}
 
