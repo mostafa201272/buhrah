@@ -67,6 +67,12 @@ header .brand .logo span svg rect{
     fill: var(--main-site-color);
 }
 
+@media (max-width: 991.98px){
+    header {
+        height: 70px;
+    }
+}
+
 .horizontal-header .container{
     display: flex;
     flex-direction: row;
@@ -136,6 +142,7 @@ footer .footer-widgets .footer-widget span svg rect{
     padding: 0;
     flex-direction: column; 
     justify-content: flex-end;
+    padding-bottom: 70px;
 }
 
 .house-buy-filter .filter-body{
