@@ -9,6 +9,8 @@
 
 <!-- Styling files -->
 {% block currentPageStylesFiles %}
+<link rel="stylesheet" href="{%static 'frontend/css/swiper-bundle.min.css' %}" />
+
 
 {% endblock currentPageStylesFiles %}
 
@@ -26,46 +28,10 @@
 <!-- ========== MAIN ========== -->
 <main class="room">
     <div class="container">
-        <!-- ROOM SLIDER -->
-        <div class="room-slider">
-            <div id="room-main-image" class="owl-carousel image-gallery">
-                <!-- ITEM -->
-                <div class="item">
-                    <figure class="gradient-overlay-hover image-icon">
-                        <a href="{% static 'frontend/images/rooms/im1.webp' %}">
-                            <img class="img-fluid" src="{% static 'frontend/images/rooms/im2.webp' %}" alt="Image">
-                        </a>
-                    </figure>
-                </div>
-
-                <!-- ITEM -->
-                <div class="item">
-                    <figure class="gradient-overlay-hover image-icon">
-                        <a href="{% static 'frontend/images/rooms/im2.webp' %}">
-                            <img class="img-fluid" src="{% static 'frontend/images/rooms/im3.webp' %}" alt="Image">
-                        </a>
-                    </figure>
-                </div>
-
-                <!-- ITEM -->
-                <div class="item">
-                    <figure class="gradient-overlay-hover image-icon">
-                        <a href="{% static 'frontend/images/rooms/im3.webp' %}">
-                            <img class="img-fluid" src="{% static 'frontend/images/rooms/im1.webp' %}" alt="Image">
-                        </a>
-                    </figure>
-                </div>
-                
-                
-
-            </div>
-            <div id="room-thumbs" class="room-thumbs owl-carousel">
-                <!-- ITEM -->
-                <div class="item"><img class="img-fluid" src="{% static 'frontend/images/rooms/im2.webp' %}" alt="Image"></div>
-                <div class="item"><img class="img-fluid" src="{% static 'frontend/images/rooms/im3.webp' %}" alt="Image"></div>
-                <div class="item"><img class="img-fluid" src="{% static 'frontend/images/rooms/im1.webp' %}" alt="Image"></div>
-            
-            </div>
+        
+        <div class="section-title">
+            <h4>SR 986K</h4>
+            <p class="section-subtitle">Apartment for sale, 75 Wall Street Financial District, in New York, United States</p>
         </div>
 
         <p class="dropcap">Horem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
@@ -82,9 +48,10 @@
             at laborum! Minima ducimus, nobis quasi minus totam ab quo, quia labore nihil praesentium doloremque recusandae! Voluptas delectus distinctio architecto aliquid eligendi nostrum odio a culpa modi cumque mollitia id, consequuntur, labore, ut minima
             illum. Repellendus cumque veniam quae odit enim.
         </p>
+
         <div class="section-title">
-            <h4>ROOM SERVICES</h4>
-            <p class="section-subtitle">Single Room Includes</p>
+            <h4>SERVICES</h4>
+            <p class="section-subtitle">Single Includes</p>
         </div>
         <div class="room-services-list">
             <div class="row">
@@ -130,20 +97,68 @@
 
             </div>
         </div>
-        <p>
-            Horem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
-            ex ea
-            <u>commodo consequat.</u>
-            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit...
-        </p>
         
-        <p>
-            Horem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
-            ex ea
-            <u>commodo consequat.</u>
-            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit...
-        </p>
+
+        <div class="section-title">
+            <h4>MAP</h4>
+            <p class="section-subtitle">Location lat, lang, google icon</p>
+        </div>
         
+        <div class="buy-page-details-location-map">
+
+            {{map|safe}}
+            
+        </div>
+
+
+        <div class="section-title">
+            <h4>Amenities</h4>
+        </div>
+        <div class="room-services-list">
+            <div class="row">
+                
+                <div class="col-sm-4">
+                    <ul class="list-unstyled">
+                        <li>
+                        <i class="fa fa-check"></i>Double Bed</li>
+                        <li>
+                        <i class="fa fa-check"></i>80 Sq mt</li>
+                        <li>
+                        <i class="fa fa-check"></i>3 Persons</li>
+                        <li>
+                        <i class="fa fa-check"></i>Free Internet</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4">
+                    <ul class="list-unstyled">
+                        <li>
+                        <i class="fa fa-check"></i>Free Wi-Fi</li>
+                        <li>
+                        <i class="fa fa-check"></i>Breakfast Include</li>
+                        <li>
+                        <i class="fa fa-check"></i>Private Balcony</li>
+                        <li class="no">
+                        <i class="fa fa-times"></i>Free Newspaper</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4">
+                    <ul class="list-unstyled">
+                        <li class="no">
+                        <i class="fa fa-times"></i>Flat Screen Tv</li>
+                        <li>
+                        <i class="fa fa-check"></i>Full Ac</li>
+                        <li class="no">
+                        <i class="fa fa-times"></i>Beach View</li>
+                        <li>
+                        <i class="fa fa-check"></i>Room Service</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 </main>
 
@@ -161,4 +176,28 @@
         $(".menu-item.buy_page").addClass("active").siblings().removeClass("active");
     })
 </script>
+
+<!-- Swiper JS -->
+<script src="{% static 'frontend/js/swiper-bundle.min.js' %}"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+  </script>
+
 {% endblock currentPageScriptsFiles %}
