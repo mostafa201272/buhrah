@@ -10,12 +10,6 @@
 <!-- Styling files -->
 {% block currentPageStylesFiles %}
 
-    <!-- BEGIN PAGE LEVEL STYLES -->
-    <link href="{% static 'base/framework/plugins/lightbox/photoswipe.css' %}" rel="stylesheet" type="text/css" />
-    <link href="{% static 'base/framework/plugins/lightbox/default-skin/default-skin.css' %}" rel="stylesheet" type="text/css" />
-    <link href="{% static 'base/framework/plugins/lightbox/custom-photswipe.css' %}" rel="stylesheet" type="text/css" />
-    <!-- END PAGE LEVEL STYLES -->   
-
 
 {% endblock currentPageStylesFiles %}
 
@@ -31,149 +25,178 @@
 
 
 <!-- ========== MAIN ========== -->
-<main class="room">
+<main class="room" style="padding: 50px 0;">
     <div class="container">
         
 
         {% comment %} START OF GALLERY {% endcomment %}
 
+        <!-- ROOM SLIDER -->
+        <div class="room-slider">
+            <div id="room-main-image" class="owl-carousel image-gallery">
+                <!-- ITEM -->
+                <div class="item">
+                    <figure class="gradient-overlay-hover image-icon">
+                    <a href="{% static 'frontend/images/rooms/im1.webp' %}">
+                        <img class="img-fluid" src="{% static 'frontend/images/rooms/im1.webp' %}" alt="Image">
+                    </a>
+                    </figure>
+                </div>
+                <!-- ITEM -->
+                <div class="item">
+                    <figure class="gradient-overlay-hover image-icon">
+                    <a href="{% static 'frontend/images/rooms/im2.webp' %}">
+                        <img class="img-fluid" src="{% static 'frontend/images/rooms/im2.webp' %}" alt="Image">
+                    </a>
+                    </figure>
+                </div>
+                <!-- ITEM -->
+                <div class="item">
+                    <figure class="gradient-overlay-hover image-icon">
+                    <a href="{% static 'frontend/images/rooms/im3.webp' %}">
+                        <img class="img-fluid" src="{% static 'frontend/images/rooms/im3.webp' %}" alt="Image">
+                    </a>
+                    </figure>
+                </div>
+                <!-- ITEM -->
+                <div class="item">
+                    <figure class="gradient-overlay-hover image-icon">
+                    <a href="{% static 'frontend/images/rooms/im1.webp' %}">
+                        <img class="img-fluid" src="{% static 'frontend/images/rooms/im1.webp' %}" alt="Image">
+                    </a>
+                    </figure>
+                </div>
+                <!-- ITEM -->
+                <div class="item">
+                    <figure class="gradient-overlay-hover image-icon">
+                    <a href="{% static 'frontend/images/rooms/im2.webp' %}">
+                        <img class="img-fluid" src="{% static 'frontend/images/rooms/im2.webp' %}" alt="Image">
+                    </a>
+                    </figure>
+                </div>
+                <!-- ITEM -->
+                <div class="item">
+                    <figure class="gradient-overlay-hover image-icon">
+                    <a href="{% static 'frontend/images/rooms/im3.webp' %}">
+                        <img class="img-fluid" src="{% static 'frontend/images/rooms/im3.webp' %}" alt="Image">
+                    </a>
+                    </figure>
+                </div>
+                <!-- ITEM -->
+                <div class="item">
+                    <figure class="gradient-overlay-hover image-icon">
+                    <a href="{% static 'frontend/images/rooms/im1.webp' %}">
+                        <img class="img-fluid" src="{% static 'frontend/images/rooms/im1.webp' %}" alt="Image">
+                    </a>
+                    </figure>
+                </div>
+                <!-- ITEM -->
+                <div class="item">
+                    <figure class="gradient-overlay-hover image-icon">
+                    <a href="{% static 'frontend/images/rooms/im1.webp' %}">
+                        <img class="img-fluid" src="{% static 'frontend/images/rooms/im2.webp' %}" alt="Image">
+                    </a>
+                    </figure>
+                </div>
+            </div>
 
-        <!--  BEGIN CONTENT AREA  -->
-        <div id="content" class="main-content">
-            
-            <div class="layout-px-spacing">
-                
-                <div class="row" id="cancel-row">
-                    
-                    <div class="col-lg-12 layout-spacing layout-top-spacing">
-                        
-                        <div class="statbox widget box box-shadow">
-                            
-                            <div class="widget-content widget-content-area">
-                                
-                                <div id="demo-test-gallery" class="demo-gallery" data-pswp-uid="1">
-                                    
-                                    <a class="normal-gallery-image" href="{% static 'frontend/images/rooms/im1.webp' %}" data-size="1920x1080" data-med="{% static 'frontend/images/rooms/im1.webp' %}" data-med-size="1920x1080">
-                                        <img src="{% static 'frontend/images/rooms/im1.webp' %}" alt="image-gallery">
-                                        <figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
-                                    </a>
-
-                                    <a class="normal-gallery-image" href="{% static 'frontend/images/rooms/im2.webp' %}" data-size="1920x1080" data-med="{% static 'frontend/images/rooms/im2.webp' %}" data-med-size="1920x1080">
-                                        <img src="{% static 'frontend/images/rooms/im2.webp' %}" alt="image-gallery">
-                                        <figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
-                                    </a>
-
-                                    <a class="normal-gallery-image" href="{% static 'frontend/images/rooms/im3.webp' %}" data-size="1920x1080" data-med="{% static 'frontend/images/rooms/im3.webp' %}" data-med-size="1920x1080">
-                                        <img src="{% static 'frontend/images/rooms/im3.webp' %}" alt="image-gallery">
-                                        <figure>Dummy caption. It's Greek to you. Unless, of course, you're Greek, in which case, it really makes no sense.</figure>
-                                    </a>
-
-                                    <a class="big-gallery-image" href="{% static 'frontend/images/rooms/im1.webp' %}" data-size="1920x1080" data-med="{% static 'frontend/images/rooms/im1.webp' %}" data-med-size="1920x1080">
-                                        <img src="{% static 'frontend/images/rooms/im1.webp' %}" alt="image-gallery">
-                                        <figure>This is dummy caption.</figure>
-                                    </a>
-
-                                    <a class="normal-gallery-image" href="{% static 'frontend/images/rooms/im2.webp' %}" data-size="1920x1080" data-med="{% static 'frontend/images/rooms/im2.webp' %}" data-med-size="1920x1080">
-                                        <img src="{% static 'frontend/images/rooms/im2.webp' %}" alt="image-gallery">
-                                        <figure>It's a dummy caption. He who searches for meaning here will be sorely disappointed.</figure>
-                                    </a>
-
-                                    <a class="normal-gallery-image" href="{% static 'frontend/images/rooms/im3.webp' %}" data-size="1920x1080" data-med="{% static 'frontend/images/rooms/im3.webp' %}" data-med-size="1920x1080">
-                                        <img src="{% static 'frontend/images/rooms/im3.webp' %}" alt="image-gallery">
-                                        <figure>It's a dummy caption. He who searches for meaning here will be sorely disappointed.</figure>
-                                    </a>
-                                    
-                                    
-                                </div>
-                                
-                                <!-- Root element of PhotoSwipe. Must have class pswp. -->
-                                <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-                                    <!-- Background of PhotoSwipe. It's a separate element, as animating opacity is faster than rgba(). -->
-                                    <div class="pswp__bg"></div>
-
-                                    <!-- Slides wrapper with overflow:hidden. -->
-                                    <div class="pswp__scroll-wrap">
-                                        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-                                        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-                                        <div class="pswp__container">
-                                            <div class="pswp__item"></div>
-                                            <div class="pswp__item"></div>
-                                            <div class="pswp__item"></div>
-                                        </div>
-
-                                        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-                                        <div class="pswp__ui pswp__ui--hidden">
-
-                                            <div class="pswp__top-bar">
-
-                                                <!--  Controls are self-explanatory. Order can be changed. -->
-                                                <div class="pswp__counter"></div>
-                                                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                                                <button class="pswp__button pswp__button--share" title="Share"></button>
-                                                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                                                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                                                <!-- element will get class pswp__preloader--active when preloader is running -->
-                                                <div class="pswp__preloader">
-                                                    <div class="pswp__preloader__icn">
-                                                        <div class="pswp__preloader__cut">
-                                                            <div class="pswp__preloader__donut"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                                                <div class="pswp__share-tooltip"></div> 
-                                            </div>
-
-                                            
-                                            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-                                            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-                                            <div class="pswp__caption">
-                                                <div class="pswp__caption__center"></div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>  
+            <div id="room-thumbs" class="room-thumbs owl-carousel">
+                <!-- ITEM -->
+                <div class="item"><img class="img-fluid" src="{% static 'frontend/images/rooms/im1.webp' %}" alt="Image"></div>
+                <!-- ITEM -->
+                <div class="item"><img class="img-fluid" src="{% static 'frontend/images/rooms/im2.webp' %}" alt="Image"></div>
+                <!-- ITEM -->
+                <div class="item"><img class="img-fluid" src="{% static 'frontend/images/rooms/im3.webp' %}" alt="Image"></div>
+                <!-- ITEM -->
+                <div class="item"><img class="img-fluid" src="{% static 'frontend/images/rooms/im1.webp' %}" alt="Image"></div>
+                <!-- ITEM -->
+                <div class="item"><img class="img-fluid" src="{% static 'frontend/images/rooms/im2.webp' %}" alt="Image"></div>
+                <!-- ITEM -->
+                <div class="item"><img class="img-fluid" src="{% static 'frontend/images/rooms/im3.webp' %}" alt="Image"></div>
+                <!-- ITEM -->
+                <div class="item"><img class="img-fluid" src="{% static 'frontend/images/rooms/im1.webp' %}" alt="Image"></div>
+                <!-- ITEM -->
+                <div class="item"><img class="img-fluid" src="{% static 'frontend/images/rooms/im2.webp' %}" alt="Image"></div>
             </div>
         </div>
-
-        <!--  END CONTENT AREA  -->
-
+        
         {% comment %} END OF GALLERY {% endcomment %}
+        
+        {% comment %} START OF PAGE BODY {% endcomment %}
+        <section class="house-details-page-body">
+            <div class="row">
 
-        <div class="section-title">
-            <h4>SR 986K</h4>
-            <p class="section-subtitle">Apartment for sale, 75 Wall Street Financial District, in New York, United States</p>
-        </div>
+                {% comment %} START OF PAGE CONTENT {% endcomment %}
+                <div class="col-md-9">
+    
+                    {% comment %} START OF Section [1]: Title and Price {% endcomment %}
+                    <div class="row">
+    
+                        {% comment %} Title {% endcomment %}
+                        <div class="col-md-9 house-top-details">
+                            <h1 class="house-title">
+                                House for sale, 1024 Kennedy Dr, St. Augustine, FL 32084, USA, in St. Johns County, United States
+                            </h1>
 
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-            nisl ut aliquip ex ea
-            <u>commodo consequat.</u>
-            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit...
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ut, asperiores voluptatibus quo rem iusto laborum, laudantium corrupti ea esse officia placeat beatae! Ducimus quasi nisi odio architecto repudiandae illo sunt nulla quia obcaecati
-            blanditiis? Doloremque commodi deserunt corporis, maiores, quam ipsam voluptates beatae necessitatibus, sapiente impedit sunt cupiditate odio, officiis quo debitis distinctio! Tenetur quibusdam modi adipisci vel ullam cum ratione itaque laborum
-            molestias nesciunt. Qui itaque saepe obcaecati quo tempora natus laudantium quidem, inventore totam. Nobis incidunt est doloribus qui vero expedita a fugit necessitatibus minus sapiente illo, commodi laudantium minima quo deserunt odio repellat
-            placeat quas, perferendis, voluptates! Omnis corporis nostrum optio reprehenderit aspernatur consequuntur, nisi rerum. Architecto provident alias voluptatem aliquam tenetur eius eos. Iure, earum. Asperiores consectetur, dolorem animi pariatur. Magni
-            necessitatibus non hic odit nesciunt voluptatum distinctio provident, repellendus quae dolores, assumenda delectus quisquam fuga velit natus cumque. Odio sint deserunt ex dolorem, culpa, sit accusantium nesciunt. Dicta, nulla aperiam expedita nihil
-            at laborum! Minima ducimus, nobis quasi minus totam ab quo, quia labore nihil praesentium doloremque recusandae! Voluptas delectus distinctio architecto aliquid eligendi nostrum odio a culpa modi cumque mollitia id, consequuntur, labore, ut minima
-            illum. Repellendus cumque veniam quae odit enim.
-        </p>
+                            <div class="house-location">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </span>
+                                <p>
+                                    St. Johns County, 1024 Kennedy Dr, St. Augustine, FL 32084, USA
+                                </p>
+                            </div>
+
+                            <div class="house-features">
+                                <div>Beds: <span>5</span></div>
+                                <div>Bathrooms: <span>2</span></div>
+                                <div>Area: <span>500</span> m<sup>2</sup> </div>
+                            </div>
+                            
+                        </div>
+                        
+                        {% comment %} Price {% endcomment %}
+                        <div class="col-md-3">
+                            <h4 class="current-price">$339,000</h4>
+                            <h5 class="discount"><span class="original-price">$349,000</span> -$10,000</h5>
+                        </div>
+                        {% comment %} END OF Price {% endcomment %}
+
+                        {% comment %} START OF HOUSE DESCRIPTION {% endcomment %}
+                        <div class="col-md-12">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                                nisl ut aliquip ex ea
+                                commodo consequat.
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit...
+                            
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ut, asperiores voluptatibus quo rem iusto laborum, laudantium corrupti ea esse officia placeat beatae! Ducimus quasi nisi odio architecto repudiandae illo sunt nulla quia obcaecati
+                                blanditiis? Doloremque commodi deserunt corporis, maiores, quam ipsam voluptates beatae necessitatibus, sapiente impedit sunt cupiditate odio, officiis quo debitis distinctio! Tenetur quibusdam modi adipisci vel ullam cum ratione itaque laborum
+                                molestias nesciunt. Qui itaque saepe obcaecati quo tempora natus laudantium quidem, inventore totam. Nobis incidunt est doloribus qui vero expedita a fugit necessitatibus minus sapiente illo, commodi laudantium minima quo deserunt odio repellat
+                                placeat quas, perferendis, voluptates! Omnis corporis nostrum optio reprehenderit aspernatur consequuntur, nisi rerum. Architecto provident alias voluptatem aliquam tenetur eius eos. Iure, earum. Asperiores consectetur, dolorem animi pariatur. Magni
+                                necessitatibus non hic odit nesciunt voluptatum distinctio provident, repellendus quae dolores, assumenda delectus quisquam fuga velit natus cumque. Odio sint deserunt ex dolorem, culpa, sit accusantium nesciunt. Dicta, nulla aperiam expedita nihil
+                                at laborum! Minima ducimus, nobis quasi minus totam ab quo, quia labore nihil praesentium doloremque recusandae! Voluptas delectus distinctio architecto aliquid eligendi nostrum odio a culpa modi cumque mollitia id, consequuntur, labore, ut minima
+                                illum. Repellendus cumque veniam quae odit enim.
+                            </p>
+                        </div>
+                        {% comment %} END OF HOUSE DESCRIPTION {% endcomment %}
+    
+                    </div>
+                    {% comment %} END OF Section [1]: Title and Price {% endcomment %}
+    
+                </div>
+                {% comment %} END OF PAGE CONTENT {% endcomment %}
+    
+                {% comment %} START OF PAGE REQUEST TOURE {% endcomment %}
+                <div class="col-md-3">
+    
+                </div>
+                {% comment %} END OF PAGE REQUEST TOURE {% endcomment %}
+    
+            </div>
+
+        </section>
+        {% comment %} END OF PAGE BODY {% endcomment %}
+
 
         <div class="section-title">
             <h4>SERVICES</h4>
@@ -303,11 +326,55 @@
     })
 </script>
 
-    <!-- BEGIN PAGE LEVEL SCRIPTS -->
-    <script src="{% static 'base/framework/plugins/lightbox/photoswipe.min.js' %}"></script>
-    <script src="{% static 'base/framework/plugins/lightbox/photoswipe-ui-default.min.js' %}"></script>
-    <script src="{% static 'base/framework/plugins/lightbox/custom-photswipe.js' %}"></script>
-    <!-- END PAGE LEVEL SCRIPTS -->
+<!-- ========== REVOLUTION SLIDER ========== -->
+<script src="{% static 'frontend/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'frontend/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+<script src="{% static 'frontend/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'frontend/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script src="{% static 'frontend/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'frontend/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'frontend/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script src="{% static 'frontend/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'frontend/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script src="{% static 'frontend/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'frontend/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
 
+<script>
+    $(function(){
+        
+        // Getting Slider Image width
+        let slider_image_width = $(".owl-carousel .owl-item");
+
+        // Setting Slider Image Height depend on width
+        $(".owl-carousel .owl-item").css("height", (slider_image_width[0].offsetWidth * 0.7))
+
+
+        // Getting Slider Thumbs Image width
+        let slider_thumbs_width = $("#room-thumbs .item");
+
+        // Setting Slider Thumbs Height depend on width
+        $(".owl-carousel.owl-drag .owl-item").css("height", (slider_thumbs_width[0].offsetWidth * 0.7))
+
+        // CHANGE SLIDER IMAGES ON RESIZE
+        $(window).on('resize', function(){
+
+            // Getting Slider Image width
+            let slider_image_width = $(".owl-carousel .owl-item");
+
+            // Setting Slider Image Height depend on width
+            $(".owl-carousel .owl-item").css("height", (slider_image_width[0].offsetWidth * 0.7))
+
+
+            // Getting Slider Thumbs Image width
+            let slider_thumbs_width = $("#room-thumbs .item");
+
+            // Setting Slider Thumbs Height depend on width
+            $(".owl-carousel.owl-drag .owl-item").css("height", (slider_thumbs_width[0].offsetWidth * 0.7))
+
+
+        });
+
+    });
+</script>
 
 {% endblock currentPageScriptsFiles %}
