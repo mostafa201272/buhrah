@@ -612,6 +612,13 @@ footer .footer-widgets .footer-widget span svg rect{
 .house-details-page-body .house-features div span{
     font-weight: 700;
 }
+.house-details-description p{
+    color: #555;
+}
 
+.house-details-areas-title h4{
+    font-size: 1.5rem;
+    color: #333
+}
 
 /* END OF BUY DETAILS PAGE */
