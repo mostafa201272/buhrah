@@ -9,10 +9,23 @@
 }
 /* END OF CSS VARIABLES */
 
+/* START OF GENERAL STYLES */
 *{
     font-family: 'Rubik', sans-serif;
 }
+label,
+.bootstrap-select.btn-group .dropdown-menu a.dropdown-item span.dropdown-item-inner span.text,
+.panel-dropdown .guests-buttons input{
+    color: #343a40;
+}
 
+.leaflet-touch .leaflet-control-attribution, 
+.leaflet-touch .leaflet-control-layers, 
+.leaflet-touch .leaflet-bar{
+    display: none !important;
+}
+
+/* END OF GENERAL STYLES */
 .loader3 .spin img{
     margin: 10%;
     max-width: 100%;
@@ -458,6 +471,11 @@ footer .footer-widgets .footer-widget span svg rect{
     cursor: pointer;
 }
 
+.fav-icon:hover svg{
+    fill: var(--main-site-color);
+}
+
+
 /* START OF BUY CARD SLIDER */
 .house-card-slider{
     min-height: 250px;
@@ -516,6 +534,13 @@ footer .footer-widgets .footer-widget span svg rect{
     height: auto;
     border-radius: 10px;
     overflow: hidden;
+}
+.buy-page-details-location-map,
+.buy-page-details-location-map > div:first-child,
+.buy-page-details-location-map > div:first-child > div:first-child{
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 300px;
 }
 
 .owl-carousel .owl-stage-outer{
@@ -620,5 +645,29 @@ footer .footer-widgets .footer-widget span svg rect{
     font-size: 1.5rem;
     color: #333
 }
+.house-details-areas-section-title h6{
+    font-weight: 500;
+}
+.house-details-areas-section{
+    margin-top: 15px;
+}
+.house-details-areas-section-body-item{
+    display: flex;
+    padding: 5px 0;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    color: #797979;
+    font-size: .8125rem;
+    line-height: 2rem;
+    justify-content: space-between;
+}
 
+.room-list-item .room-info .room-title a{
+    color: var(--main-site-color);
+}
+
+.room-list-item p,
+.room-list-item .room-services span{
+    color: #343a40;
+}
 /* END OF BUY DETAILS PAGE */
