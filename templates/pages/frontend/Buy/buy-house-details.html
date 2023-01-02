@@ -127,7 +127,7 @@
             <div class="row">
 
                 {% comment %} START OF PAGE CONTENT {% endcomment %}
-                <div class="col-md-9">
+                <div class="col-lg-8">
     
                     {% comment %} START OF Section [1]: Title and Price {% endcomment %}
                     <div class="row">
@@ -164,24 +164,13 @@
 
                         {% comment %} START OF HOUSE DESCRIPTION {% endcomment %}
                         <div class="col-md-12 house-details-description">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                                nisl ut aliquip ex ea
-                                commodo consequat.
-                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit...
-                            
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ut, asperiores voluptatibus quo rem iusto laborum, laudantium corrupti ea esse officia placeat beatae! Ducimus quasi nisi odio architecto repudiandae illo sunt nulla quia obcaecati
-                                blanditiis? Doloremque commodi deserunt corporis, maiores, quam ipsam voluptates beatae necessitatibus, sapiente impedit sunt cupiditate odio, officiis quo debitis distinctio! Tenetur quibusdam modi adipisci vel ullam cum ratione itaque laborum
-                                molestias nesciunt. Qui itaque saepe obcaecati quo tempora natus laudantium quidem, inventore totam. Nobis incidunt est doloribus qui vero expedita a fugit necessitatibus minus sapiente illo, commodi laudantium minima quo deserunt odio repellat
-                                placeat quas, perferendis, voluptates! Omnis corporis nostrum optio reprehenderit aspernatur consequuntur, nisi rerum. Architecto provident alias voluptatem aliquam tenetur eius eos. Iure, earum. Asperiores consectetur, dolorem animi pariatur. Magni
-                                necessitatibus non hic odit nesciunt voluptatum distinctio provident, repellendus quae dolores, assumenda delectus quisquam fuga velit natus cumque. Odio sint deserunt ex dolorem, culpa, sit accusantium nesciunt. Dicta, nulla aperiam expedita nihil
-                                at laborum! Minima ducimus, nobis quasi minus totam ab quo, quia labore nihil praesentium doloremque recusandae! Voluptas delectus distinctio architecto aliquid eligendi nostrum odio a culpa modi cumque mollitia id, consequuntur, labore, ut minima
-                                illum. Repellendus cumque veniam quae odit enim.
+                            <p>Double Wide with Single Car Garage in Puerto Vista Mobile Home Park. 3 bed, 2 bath. Large open living/dining, Galley Kitchen, Custom laundry & storage with built-in cabinet & folding table. Primary suite: 2nd room could be bedroom/office. 3rd bedroom is near the guest bath, and has custom storage off the closet. Small back yard, planters, and a deep one car garage finish this property! Call your agent for more info!
                             </p>
                         </div>
                         {% comment %} END OF HOUSE DESCRIPTION {% endcomment %}
                         
                         {% comment %} START OF AREAS {% endcomment %}
-                        <div class="col-md-12 house-details-areas">
+                        <div class="col-md-12 house-details-areas house-details-section">
 
                             <div class="house-details-areas-title">
                                 <h4>SERVICES</h4>
@@ -199,7 +188,7 @@
                                         <div class="col-md-6">
                                             <div class="house-details-areas-section-body-item">
                                                 <span>Rooms</span>
-                                                <span>2</span>
+                                                <h6>3</h6>
                                             </div>
                                         </div>
                                         <!-- End of of item -->
@@ -207,8 +196,8 @@
                                         <!-- Start of item -->
                                         <div class="col-md-6">
                                             <div class="house-details-areas-section-body-item">
-                                                <span>Rooms</span>
-                                                <span>2</span>
+                                                <span>Bedrooms</span>
+                                                <h6>4</h6>
                                             </div>
                                         </div>
                                         <!-- End of of item -->
@@ -216,17 +205,8 @@
                                         <!-- Start of item -->
                                         <div class="col-md-6">
                                             <div class="house-details-areas-section-body-item">
-                                                <span>Rooms</span>
-                                                <span>2</span>
-                                            </div>
-                                        </div>
-                                        <!-- End of of item -->
-
-                                        <!-- Start of item -->
-                                        <div class="col-md-6">
-                                            <div class="house-details-areas-section-body-item">
-                                                <span>Rooms</span>
-                                                <span>2</span>
+                                                <span>Bathrooms</span>
+                                                <h6>2</h6>
                                             </div>
                                         </div>
                                         <!-- End of of item -->
@@ -247,8 +227,8 @@
                                         <!-- Start of item -->
                                         <div class="col-md-6">
                                             <div class="house-details-areas-section-body-item">
-                                                <span>Rooms</span>
-                                                <span>2</span>
+                                                <span>Living</span>
+                                                <h6>107.02 m²</h6>
                                             </div>
                                         </div>
                                         <!-- End of of item -->
@@ -256,8 +236,8 @@
                                         <!-- Start of item -->
                                         <div class="col-md-6">
                                             <div class="house-details-areas-section-body-item">
-                                                <span>Rooms</span>
-                                                <span>2</span>
+                                                <span>Internal</span>
+                                                <h6>107.02 m²</h6>
                                             </div>
                                         </div>
                                         <!-- End of of item -->
@@ -270,6 +250,109 @@
                         </div>
                         {% comment %} END OF AREAS {% endcomment %}
 
+                        {% comment %} START OF LOCATION {% endcomment %}
+                        <div class="col-md-12 house-details-location house-details-section">
+
+                            <div class="house-details-location-title">
+                                <h4>Location</h4>
+                                <p class="section-subtitle">Location lat, lang, google icon</p>
+                            </div>
+
+                            {% comment %} start of Map {% endcomment %}
+                            <div class="buy-page-details-location-map">
+                                {{map|safe}}
+                            </div>
+                            {% comment %} end of Map {% endcomment %}
+
+                        </div>
+                        {% comment %} END OF LOCATION {% endcomment %}
+
+                        {% comment %} START OF Amenities {% endcomment %}
+                        <div class="col-md-12 house-details-amenities house-details-section">
+
+                            <div class="house-details-amenities-title">
+                                <h4>Amenities</h4>
+                            </div>
+
+                            <div class="row">
+
+                                <!-- START OF ITEM -->
+                                <div class="col-md-6">
+                                    <div class="amenities-item">
+                                        <div class="amenities-item-icon">
+                                            <image src="{% static 'base/images/icon.svg' %}" alt="icon">
+                                        </div>
+                                        <div class="amenities-item-title">
+                                            <span>Terrace</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END OF ITEM -->
+
+                                <!-- START OF ITEM -->
+                                <div class="col-md-6">
+                                    <div class="amenities-item">
+                                        <div class="amenities-item-icon">
+                                            <image src="{% static 'base/images/icon.svg' %}" alt="icon">
+                                        </div>
+                                        <div class="amenities-item-title">
+                                            <span>Terrace</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END OF ITEM -->
+
+                                <!-- START OF ITEM -->
+                                <div class="col-md-6">
+                                    <div class="amenities-item">
+                                        <div class="amenities-item-icon">
+                                            <image src="{% static 'base/images/icon.svg' %}" alt="icon">
+                                        </div>
+                                        <div class="amenities-item-title">
+                                            <span>Terrace</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END OF ITEM -->
+
+                            </div>
+
+                        </div>
+                        {% comment %} END OF Amenities {% endcomment %}
+
+                        {% comment %} START OF Amenities {% endcomment %}
+                        <div class="col-md-12 house-details-Construction house-details-section">
+
+                            <div class="house-details-Construction-title">
+                                <h4>Construction</h4>
+                            </div>
+                            <div class="house-details-Construction-section-body">
+                                <div class="row">
+                                    
+                                    <!-- Start of item -->
+                                    <div class="col-md-6">
+                                        <div class="house-details-Construction-section-body-item">
+                                            <span>Type</span>
+                                            <h6>House</h6>
+                                        </div>
+                                    </div>
+                                    <!-- End of of item -->
+
+                                    <!-- Start of item -->
+                                    <div class="col-md-6">
+                                        <div class="house-details-Construction-section-body-item">
+                                            <span>Construction year</span>
+                                            <h6>1977</h6>
+                                        </div>
+                                    </div>
+                                    <!-- End of of item -->
+
+                                </div>
+                            </div>
+
+                        </div>
+                        {% comment %} END OF Amenities {% endcomment %}
+                        
 
                     </div>
                     {% comment %} END OF Section [1]: Title and Price {% endcomment %}
@@ -278,76 +361,39 @@
                 {% comment %} END OF PAGE CONTENT {% endcomment %}
     
                 {% comment %} START OF PAGE REQUEST TOURE {% endcomment %}
-                <div class="col-md-3">
-    
+                <div class="col-lg-4 house-details-request-tour-web-view">
+                    
+                    <div class="house-details-request-tour">
+
+
+                        <form>
+
+                            <div class="house-details-request-tour-form-contact-info">
+                                <input type="text" placeholder="Full name" >
+                                <input type="email" placeholder="E-mail" >
+                                <input type="tel" placeholder="Mobile number" >
+                            </div>
+                            <div class="house-details-request-tour-form-contact-message">
+                                <label>Message</label>
+                                <textarea></textarea>
+                            </div>
+
+                            <div class="house-details-request-tour-form-contact-button">
+                                <button>Request Tour</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
                 </div>
                 {% comment %} END OF PAGE REQUEST TOURE {% endcomment %}
-    
+                
             </div>
 
         </section>
         {% comment %} END OF PAGE BODY {% endcomment %}
 
-
-        <div class="section-title">
-            <h4>MAP</h4>
-            <p class="section-subtitle">Location lat, lang, google icon</p>
-        </div>
-        
-        <div class="buy-page-details-location-map">
-
-            {{map|safe}}
-            
-        </div>
-
-
-        <div class="section-title">
-            <h4>Amenities</h4>
-        </div>
-        <div class="room-services-list">
-            <div class="row">
-                
-                <div class="col-sm-4">
-                    <ul class="list-unstyled">
-                        <li>
-                        <i class="fa fa-check"></i>Double Bed</li>
-                        <li>
-                        <i class="fa fa-check"></i>80 Sq mt</li>
-                        <li>
-                        <i class="fa fa-check"></i>3 Persons</li>
-                        <li>
-                        <i class="fa fa-check"></i>Free Internet</li>
-                    </ul>
-                </div>
-
-                <div class="col-sm-4">
-                    <ul class="list-unstyled">
-                        <li>
-                        <i class="fa fa-check"></i>Free Wi-Fi</li>
-                        <li>
-                        <i class="fa fa-check"></i>Breakfast Include</li>
-                        <li>
-                        <i class="fa fa-check"></i>Private Balcony</li>
-                        <li class="no">
-                        <i class="fa fa-times"></i>Free Newspaper</li>
-                    </ul>
-                </div>
-
-                <div class="col-sm-4">
-                    <ul class="list-unstyled">
-                        <li class="no">
-                        <i class="fa fa-times"></i>Flat Screen Tv</li>
-                        <li>
-                        <i class="fa fa-check"></i>Full Ac</li>
-                        <li class="no">
-                        <i class="fa fa-times"></i>Beach View</li>
-                        <li>
-                        <i class="fa fa-check"></i>Room Service</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
 
     </div>
 </main>
@@ -357,6 +403,53 @@
 {% include 'pages/frontend/footer.html' %}
 
 {% endblock currentBodyContent %}
+
+
+{% comment %} Extra html {% endcomment %}
+{% block extra_html %} 
+
+    <div class="bottom-navbar-mobile-view">
+
+        <button class="request-tour-mobile-navbar-btn" id="request-tour-mobile-navbar-btn" >Request Tour</button>
+        <button class="contact-us-mobile-navbar-btn">Contact Us</button>
+        
+    </div>
+
+    <div class="house-details-request-tour-mobile-view" id="house-details-request-tour-mobile-view">
+
+        <div class="house-details-request-tour">
+
+            <div class="house-details-request-tour-header">
+                <h6>Request Tour</h6>
+                <div class="house-details-request-tour-header-icon" id="house-details-request-tour-header-icon">
+                    x
+                </div>
+            </div>
+
+            {% comment %} Start of Form {% endcomment %}
+            <form>
+
+                <div class="house-details-request-tour-form-contact-info">
+                    <input type="text" placeholder="Full name" >
+                    <input type="email" placeholder="E-mail" >
+                    <input type="tel" placeholder="Mobile number" >
+                </div>
+                <div class="house-details-request-tour-form-contact-message">
+                    <label>Message</label>
+                    <textarea></textarea>
+                </div>
+
+                <div class="house-details-request-tour-form-contact-button">
+                    <button>Request Tour</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+{% endblock extra_html %}
 
 <!-- Scripting files -->
 {% block currentPageScriptsFiles %}
@@ -412,6 +505,18 @@
             // Setting Slider Thumbs Height depend on width
             $(".owl-carousel.owl-drag .owl-item").css("height", (slider_thumbs_width[0].offsetWidth * 0.7))
 
+
+        });
+
+        $(document).on("click", "#request-tour-mobile-navbar-btn", function(){
+
+            $("#house-details-request-tour-mobile-view").fadeIn();
+
+        });
+
+        $(document).on("click", "#house-details-request-tour-header-icon", function(){
+
+            $("#house-details-request-tour-mobile-view").fadeOut();
 
         });
 
