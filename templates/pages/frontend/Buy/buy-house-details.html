@@ -10,6 +10,7 @@
 <!-- Styling files -->
 {% block currentPageStylesFiles %}
 
+<link rel="stylesheet" href="{% static 'frontend/css/intlTelInput.min.css' %}">
 
 {% endblock currentPageStylesFiles %}
 
@@ -371,7 +372,7 @@
                             <div class="house-details-request-tour-form-contact-info">
                                 <input type="text" placeholder="Full name" >
                                 <input type="email" placeholder="E-mail" >
-                                <input type="tel" placeholder="Mobile number" >
+                                <input type="tel" class="visitor_mobile_number" id="visitor_mobile_number"  >
                             </div>
                             <div class="house-details-request-tour-form-contact-message">
                                 <label>Message</label>
@@ -432,7 +433,7 @@
                 <div class="house-details-request-tour-form-contact-info">
                     <input type="text" placeholder="Full name" >
                     <input type="email" placeholder="E-mail" >
-                    <input type="tel" placeholder="Mobile number" >
+                    <input type="tel" id="visitor_mobile_number" placeholder="Mobile number" >
                 </div>
                 <div class="house-details-request-tour-form-contact-message">
                     <label>Message</label>
@@ -473,6 +474,9 @@
 <script src="{% static 'frontend/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
 <script src="{% static 'frontend/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
 
+<!-- =================== Countries data ==================== -->
+<script src="{% static 'frontend/js/intlTelInput-jquery.min.js' %}"></script>
+
 <script>
     $(function(){
         
@@ -508,16 +512,33 @@
 
         });
 
+        // Open Mobile Request tour screen
         $(document).on("click", "#request-tour-mobile-navbar-btn", function(){
 
             $("#house-details-request-tour-mobile-view").fadeIn();
 
         });
 
+        // Close Mobile Request tour screen
         $(document).on("click", "#house-details-request-tour-header-icon", function(){
 
             $("#house-details-request-tour-mobile-view").fadeOut();
 
+        });
+
+        // Mobile Nuber field
+        $("#visitor_mobile_number").intlTelInput({
+            allowDropdown:true,
+            autoHideDialCode:true,
+            autoPlaceholder:"polite",
+            customPlaceholder:null,
+            dropdownContainer:null,
+            excludeCountries: [],
+            formatOnDisplay:true,
+            initialCountry:"SA",
+            preferredCountries: ["SA","Eg" ],
+            separateDialCode:false,
+            utilsScript: "{% static 'frontend/js/utils.js' %}",
         });
 
     });

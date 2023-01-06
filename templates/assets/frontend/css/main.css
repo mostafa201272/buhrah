@@ -57,7 +57,9 @@ button.mfp-close{
     right: 50%;
     transform: translate(-50%, 0);
 }
-
+.iti.iti--allow-dropdown{
+    width: 100%;
+}
 /* END OF GENERAL STYLES */
 .loader3 .spin img{
     margin: 10%;
@@ -618,6 +620,7 @@ footer .footer-widgets .footer-widget span svg rect{
 .house-details-page-body{
     margin-top: 100px;
     padding: 0;
+    overflow: visible;
 }
 .house-details-page-body .house-top-details{
     margin-bottom: 20px;
@@ -756,7 +759,7 @@ footer .footer-widgets .footer-widget span svg rect{
 }
 .house-details-request-tour{
     display: block;
-    width: 98%;
+    width: 100%;
 }
 .house-details-request-tour .house-details-request-tour-form-contact-info{
     width: 100%;
@@ -778,11 +781,12 @@ footer .footer-widgets .footer-widget span svg rect{
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
-.house-details-request-tour .house-details-request-tour-form-contact-info input:last-of-type{
+.house-details-request-tour .house-details-request-tour-form-contact-info input.visitor_mobile_number{
     border-top: 0;
-    /* padding-bottom: 10px; */
-    border-bottom-right-radius: 5px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
     border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .house-details-request-tour .house-details-request-tour-form-contact-message label{
     line-height: 18px;
