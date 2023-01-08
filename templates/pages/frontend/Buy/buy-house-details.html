@@ -11,6 +11,8 @@
 {% block currentPageStylesFiles %}
 
 <link rel="stylesheet" href="{% static 'frontend/css/intlTelInput.min.css' %}">
+<link href="{% static 'base/framework/css/plugins.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'base/framework/css/custom-tabs.css' %}" rel="stylesheet" type="text/css" />
 
 {% endblock currentPageStylesFiles %}
 
@@ -281,10 +283,11 @@
                                 <div class="col-md-6">
                                     <div class="amenities-item">
                                         <div class="amenities-item-icon">
-                                            <image src="{% static 'base/images/icon.svg' %}" alt="icon">
+                                            {% comment %} <image src="{% static 'base/images/icon.svg' %}" alt="icon"> {% endcomment %}
+                                                <svg viewBox="0 0 32 32"><g data-name="Calque 1"><path d="M29.5 3h-27A2.5 2.5 0 0 0 0 5.5v20A2.5 2.5 0 0 0 2.5 28H3v.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V28h22v.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V28h.5a2.5 2.5 0 0 0 2.5-2.5v-20A2.5 2.5 0 0 0 29.5 3zM31 25.5a1.5 1.5 0 0 1-1.5 1.5h-27A1.5 1.5 0 0 1 1 25.5v-20A1.5 1.5 0 0 1 2.5 4h27A1.5 1.5 0 0 1 31 5.5zM12.5 6a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 12.5 6zm0 18a8.5 8.5 0 1 1 8.5-8.5 8.51 8.51 0 0 1-8.5 8.5zm2.44-9.55A2.63 2.63 0 0 0 13.26 13c.79-1.63.92-2.76.37-3.43s-1.56-.74-3-.27c-1 .33-1.59.83-1.75 1.52s.3 1.83 1.5 3.13a2.64 2.64 0 0 0-.54 1.58 2.43 2.43 0 0 0 .08.61c-1.8.13-2.84.58-3.15 1.39s.14 1.7 1.23 2.71a2.63 2.63 0 0 0 1.71.82 1.61 1.61 0 0 0 .48-.08c.81-.25 1.44-1.16 2-2.85h.3a2.64 2.64 0 0 0 1.82-.73c1 1.49 1.92 2.16 2.78 2s1.42-1 1.73-2.46a2.23 2.23 0 0 0-.45-2.28c-.61-.51-1.71-.6-3.43-.21zM9.86 11c.07-.32.43-.58 1.08-.79a4.14 4.14 0 0 1 1.28-.21.84.84 0 0 1 .64.2c.11.14.35.75-.68 2.7a2.64 2.64 0 0 0-1.07.38C10 12 9.78 11.36 9.86 11zm.07 9c-.31.1-.72-.08-1.22-.54-.75-.66-1.13-1.29-1-1.63.06-.17.46-.68 2.67-.77a2.92 2.92 0 0 0 .86.74c-.49 1.62-.97 2.12-1.31 2.2zm2.57-2.87a1.66 1.66 0 1 1 1.66-1.66 1.67 1.67 0 0 1-1.66 1.69zm5.36-.37c-.21 1-.56 1.62-.92 1.68-.18 0-.82-.06-2-1.92a2.63 2.63 0 0 0 .22-1.05v-.08c1.62-.36 2.3-.2 2.56 0s.28.73.14 1.4zM28.5 6h-4a.5.5 0 0 0-.5.5v18a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-18a.5.5 0 0 0-.5-.5zM28 24h-3V7h3z"></path></g></svg>
                                         </div>
                                         <div class="amenities-item-title">
-                                            <span>Terrace</span>
+                                            <span>Air conditioning</span>
                                         </div>
                                     </div>
                                 </div>
@@ -294,10 +297,11 @@
                                 <div class="col-md-6">
                                     <div class="amenities-item">
                                         <div class="amenities-item-icon">
-                                            <image src="{% static 'base/images/icon.svg' %}" alt="icon">
+                                            {% comment %} <image src="{% static 'base/images/icon.svg' %}" alt="icon"> {% endcomment %}
+                                            <svg width="32" height="32"><path d="M28.849 6.469a.5.5 0 0 1-.25-.933l1.695-.978a.5.5 0 0 1 .683.182.5.5 0 0 1-.183.683l-1.695.979a.494.494 0 0 1-.25.067m-10.393 6a.5.5 0 0 1-.25-.933l1.696-.978a.495.495 0 0 1 .682.182.5.5 0 0 1-.182.683l-1.696.979a.494.494 0 0 1-.25.067m12.088 0a.494.494 0 0 1-.25-.067l-1.695-.979a.5.5 0 0 1-.183-.683.5.5 0 0 1 .683-.182l1.695.978a.5.5 0 0 1-.25.933m-10.392-6a.494.494 0 0 1-.25-.067l-1.696-.979a.5.5 0 0 1-.182-.683.5.5 0 0 1 .682-.182l1.696.978a.5.5 0 0 1 .182.683.497.497 0 0 1-.432.25m4.348 9.49a.5.5 0 0 1-.5-.5V13.5a.5.5 0 1 1 1 0v1.959a.5.5 0 0 1-.5.5m0-12a.5.5 0 0 1-.5-.5V1.5a.5.5 0 1 1 1 0v1.959a.5.5 0 0 1-.5.5m0 2.021c-1.379 0-2.5 1.121-2.5 2.5s1.121 2.5 2.5 2.5S27 9.859 27 8.48s-1.121-2.5-2.5-2.5m0 6c-1.929 0-3.5-1.571-3.5-3.5s1.571-3.5 3.5-3.5S28 6.55 28 8.48s-1.57 3.5-3.5 3.5m1.461 15.586a3.18 3.18 0 0 1-4.457 0 .5.5 0 0 0-.697 0 3.18 3.18 0 0 1-4.458 0 .5.5 0 0 0-.697 0 3.18 3.18 0 0 1-4.457 0 .5.5 0 0 0-.698 0 3.18 3.18 0 0 1-4.457 0 .497.497 0 0 0-.697 0 3.18 3.18 0 0 1-2.493.877l8.801-3.68a.495.495 0 0 0 .304-.41.5.5 0 0 0-.214-.464l-3.362-2.298a.5.5 0 0 0-.46-.054l-4.1 1.562c-.29.11-.605.101-.886-.025a1.15 1.15 0 0 1-.611-.648 1.16 1.16 0 0 1 .671-1.498l4.919-1.872c.357-.136.76-.088 1.077.132l9.859 6.786a.5.5 0 0 0 .283.088h10.217a1.16 1.16 0 1 1 0 2.322.477.477 0 0 0-.228.062 3.18 3.18 0 0 1-2.461-.88.5.5 0 0 0-.698 0M19.5 18.98c1.379 0 2.5 1.122 2.5 2.501s-1.121 2.499-2.5 2.499-2.5-1.121-2.5-2.499 1.121-2.501 2.5-2.501m12.354 8.557a.5.5 0 0 0-.371-.143c.005-.058.026-.112.026-.171 0-1.192-.97-2.161-2.161-2.161H19.286l-.176-.121c.13.014.257.039.39.039 1.93 0 3.5-1.57 3.5-3.499s-1.57-3.501-3.5-3.501-3.5 1.57-3.5 3.501c0 .578.155 1.116.405 1.596l-6.848-4.712a2.176 2.176 0 0 0-2.001-.245l-4.92 1.873a2.164 2.164 0 0 0-.112 3.994 2.135 2.135 0 0 0 1.651.045l3.856-1.467 2.385 1.631-9.018 3.771a3.164 3.164 0 0 1-.544-.43.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707c1.505 1.503 3.899 1.621 5.544.343a4.17 4.17 0 0 0 2.578.894c.909 0 1.817-.298 2.577-.894a4.16 4.16 0 0 0 5.154 0 4.164 4.164 0 0 0 5.156 0 4.163 4.163 0 0 0 5.155 0c1.643 1.278 4.041 1.16 5.543-.343a.5.5 0 0 0 0-.707" fill-rule="evenodd"></path></svg>
                                         </div>
                                         <div class="amenities-item-title">
-                                            <span>Terrace</span>
+                                            <span>Swimming pool</span>
                                         </div>
                                     </div>
                                 </div>
@@ -307,10 +311,11 @@
                                 <div class="col-md-6">
                                     <div class="amenities-item">
                                         <div class="amenities-item-icon">
-                                            <image src="{% static 'base/images/icon.svg' %}" alt="icon">
+                                            {% comment %} <image src="{% static 'base/images/icon.svg' %}" alt="icon"> {% endcomment %}
+                                                <svg viewBox="0 0 32 32"><g data-name="Calque 1"><path d="M28.5 0h-25a.5.5 0 0 0-.5.5v31a.5.5 0 0 0 .5.5h25a.5.5 0 0 0 .5-.5V.5a.5.5 0 0 0-.5-.5zM28 1v8H4V1zM4 31V10h24v21zm7.5-24h-5a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5zM7 6h4V4H7zm9 1a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm0-3a1 1 0 1 0 1 1 1 1 0 0 0-1-1zm0 21a5 5 0 1 1 5-5 5 5 0 0 1-5 5zm0-9a4 4 0 1 0 4 4 4 4 0 0 0-4-4zm0 11a7 7 0 1 1 6.7-9h1.8a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-1.8a7 7 0 0 1-6.7 5zm0-13a6 6 0 1 0 5.83 7.38.51.51 0 0 1 .49-.38H24v-2h-1.68a.51.51 0 0 1-.49-.38A6 6 0 0 0 16 14zm5.5-10h-1a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1zm0 3h-1a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1zm4-3h-1a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1zm0 3h-1a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1z"></path></g></svg>
                                         </div>
                                         <div class="amenities-item-title">
-                                            <span>Terrace</span>
+                                            <span>Washing machine</span>
                                         </div>
                                     </div>
                                 </div>
@@ -364,6 +369,56 @@
                 {% comment %} START OF PAGE REQUEST TOURE {% endcomment %}
                 <div class="col-lg-4 house-details-request-tour-web-view">
                     
+
+
+                    {% comment %} START OF TABS {% endcomment %}
+                    <ul class="nav nav-tabs  mb-3" id="lineTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="underline-home-tab" data-toggle="tab" href="#underline-home" role="tab" aria-controls="underline-home" aria-selected="true"><svg> ... </svg> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="underline-profile-tab" data-toggle="tab" href="#underline-profile" role="tab" aria-controls="underline-profile" aria-selected="false"><svg> ... </svg> Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="underline-contact-tab" data-toggle="tab" href="#underline-contact" role="tab" aria-controls="underline-contact" aria-selected="false"><svg> ... </svg> Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content" id="lineTabContent-3">
+                        <div class="tab-pane fade show active" id="underline-home" role="tabpanel" aria-labelledby="underline-home-tab">
+                            <p class="mb-4">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                                                
+                            </p>
+                    
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>      
+                        </div>
+                        <div class="tab-pane fade" id="underline-profile" role="tabpanel" aria-labelledby="underline-profile-tab">
+                           <div class="media">
+                                <img class="mr-3" src="assets/img/90x90.jpg" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                              </div>
+                        </div>
+                        <div class="tab-pane fade" id="underline-contact" role="tabpanel" aria-labelledby="underline-contact-tab">
+                            <p class="dropcap  dc-outline-primary">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                    {% comment %} END OF TABS {% endcomment %}
+
+
+
+
+
                     <div class="house-details-request-tour">
 
 
@@ -372,7 +427,7 @@
                             <div class="house-details-request-tour-form-contact-info">
                                 <input type="text" placeholder="Full name" >
                                 <input type="email" placeholder="E-mail" >
-                                <input type="tel" class="visitor_mobile_number" id="visitor_mobile_number"  >
+                                <input type="tel" class="visitor_mobile_number" id="visitor_mobile_number_web_view"  >
                             </div>
                             <div class="house-details-request-tour-form-contact-message">
                                 <label>Message</label>
@@ -433,7 +488,7 @@
                 <div class="house-details-request-tour-form-contact-info">
                     <input type="text" placeholder="Full name" >
                     <input type="email" placeholder="E-mail" >
-                    <input type="tel" id="visitor_mobile_number" placeholder="Mobile number" >
+                    <input type="tel" class="visitor_mobile_number" id="visitor_mobile_number_mobile_view" placeholder="Mobile number" >
                 </div>
                 <div class="house-details-request-tour-form-contact-message">
                     <label>Message</label>
@@ -526,8 +581,8 @@
 
         });
 
-        // Mobile Nuber field
-        $("#visitor_mobile_number").intlTelInput({
+        // Mobile Number field Web View
+        $("#visitor_mobile_number_web_view").intlTelInput({
             allowDropdown:true,
             autoHideDialCode:true,
             autoPlaceholder:"polite",
@@ -540,6 +595,23 @@
             separateDialCode:false,
             utilsScript: "{% static 'frontend/js/utils.js' %}",
         });
+
+
+        // Mobile Number field Mobile View
+        $("#visitor_mobile_number_mobile_view").intlTelInput({
+            allowDropdown:true,
+            autoHideDialCode:true,
+            autoPlaceholder:"polite",
+            customPlaceholder:null,
+            dropdownContainer:null,
+            excludeCountries: [],
+            formatOnDisplay:true,
+            initialCountry:"SA",
+            preferredCountries: ["SA","Eg" ],
+            separateDialCode:false,
+            utilsScript: "{% static 'frontend/js/utils.js' %}",
+        });
+        
 
     });
 </script>
